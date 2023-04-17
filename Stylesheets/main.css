@@ -186,7 +186,7 @@ header ul li input:focus + .searchHistory{
 }
 .searchHistory{
   position: absolute;
-  left: 146px;
+  left: 154px;
   top: 42px;
   visibility: hidden;
   opacity: 0;
