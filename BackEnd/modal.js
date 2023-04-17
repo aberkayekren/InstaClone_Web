@@ -156,12 +156,14 @@ span9.onclick = function() {
 
 /*Reels Modal - 1*/
 var reelsModal1 = document.getElementById("reelsModal1");
+var reelsModalContent1 = document.getElementById("reelsModalContent1");
 var reelsBtn1 = document.getElementById("openReelsModal1");
 var reelsSpan1 = document.getElementById("reelsModalkAPAT1");
 
 reelsBtn1.onclick = function(){
   reelsModal1.style.visibility = "visible";
   reelsModal1.style.opacity = "1";
+  reelsModalContent1.style.display = "block";
   main.style.filter = "blur(5px)";
   html.style.overflowY = "hidden";
 }
@@ -169,6 +171,73 @@ reelsBtn1.onclick = function(){
 reelsSpan1.onclick = function() {
   reelsModal1.style.visibility = "hidden";
   reelsModal1.style.opacity = "0";
+  reelsModalContent1.style.display = "none";
+  html.style.overflowY = "auto";
+  main.style.filter = "blur(0px)";
+}
+
+/*Reels Modal - 2*/
+var reelsModal2 = document.getElementById("reelsModal2");
+var reelsModalContent2 = document.getElementById("reelsModalContent2");
+var reelsBtn2 = document.getElementById("openReelsModal2");
+var reelsSpan2 = document.getElementById("reelsModalkAPAT2");
+
+reelsBtn2.onclick = function(){
+  reelsModal2.style.visibility = "visible";
+  reelsModal2.style.opacity = "1";
+  reelsModalContent2.style.display = "block";
+  main.style.filter = "blur(5px)";
+  html.style.overflowY = "hidden";
+}
+
+reelsSpan2.onclick = function() {
+  reelsModal2.style.visibility = "hidden";
+  reelsModal2.style.opacity = "0";
+  reelsModalContent2.style.display = "none";
+  html.style.overflowY = "auto";
+  main.style.filter = "blur(0px)";
+}
+
+/*Reels Modal - 3*/
+var reelsModal3 = document.getElementById("reelsModal3");
+var reelsModalContent3 = document.getElementById("reelsModalContent3");
+var reelsBtn3 = document.getElementById("openReelsModal3");
+var reelsSpan3 = document.getElementById("reelsModalkAPAT3");
+
+reelsBtn3.onclick = function(){
+  reelsModal3.style.visibility = "visible";
+  reelsModal3.style.opacity = "1";
+  reelsModalContent3.style.display = "block";
+  main.style.filter = "blur(5px)";
+  html.style.overflowY = "hidden";
+}
+
+reelsSpan3.onclick = function() {
+  reelsModal3.style.visibility = "hidden";
+  reelsModal3.style.opacity = "0";
+  reelsModalContent3.style.display = "none";
+  html.style.overflowY = "auto";
+  main.style.filter = "blur(0px)";
+}
+
+/*Reels Modal - 4*/
+var reelsModal4 = document.getElementById("reelsModal4");
+var reelsModalContent4 = document.getElementById("reelsModalContent4");
+var reelsBtn4 = document.getElementById("openReelsModal4");
+var reelsSpan4 = document.getElementById("reelsModalkAPAT4");
+
+reelsBtn4.onclick = function(){
+  reelsModal4.style.visibility = "visible";
+  reelsModal4.style.opacity = "1";
+  reelsModalContent4.style.display = "block";
+  main.style.filter = "blur(5px)";
+  html.style.overflowY = "hidden";
+}
+
+reelsSpan4.onclick = function() {
+  reelsModal4.style.visibility = "hidden";
+  reelsModal4.style.opacity = "0";
+  reelsModalContent4.style.display = "none";
   html.style.overflowY = "auto";
   main.style.filter = "blur(0px)";
 }

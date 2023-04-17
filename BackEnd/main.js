@@ -7,7 +7,7 @@ function fg_load() {
     document.getElementById('preloader').style.top = "-1000px";  
     document.getElementById('preloader').style.opacity = "0";
     document.getElementById('preloader').style.zIndex = "-100";
-    document.getElementById('html').style.overflowY = "auto"}, 400);
+    document.getElementById('html').style.overflowY = "auto"}, 300);
 }
 
 /*Slide Show*/
