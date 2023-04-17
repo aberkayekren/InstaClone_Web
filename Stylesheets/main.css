@@ -13,6 +13,11 @@
   scroll-behavior: smooth;
   overflow-y:hidden;
 }
+#center{
+  position: absolute;
+  left: 48%; 
+  top: 350px;
+}
 main{
   overflow-x: hidden;
 }
@@ -37,6 +42,10 @@ nav{
   background-color: rgb(255, 255, 255);
   z-index: 2;
   transition: all 500ms;
+}
+#navbarLogo{
+  position: relative; 
+  top: -40px;
 }
 .dark nav{
   background-color: rgb(36, 36, 36);
@@ -173,6 +182,11 @@ header ul li:nth-child(4) a:hover{
 header ul li input{
   transition: 500ms all;
   z-index: 1000 !important;
+  padding: 10px; 
+  width: 600px; 
+  border-radius: 20px; 
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px; 
+  text-indent: 30px;
 } 
 header ul li input:focus{
   border-radius: 10px !important;
@@ -184,9 +198,20 @@ header ul li input:focus + .searchHistory{
   visibility: visible;
   opacity: 1;
 }
+#header{
+  width: 75%; 
+  position: relative; 
+  left: 370px;
+}
+#searchIcon{
+  position: relative; 
+  top: 7px; 
+  left:40px; 
+  fill:#c2c2c2;
+}
 .searchHistory{
   position: absolute;
-  left: 154px;
+  left: 137.5px;
   top: 42px;
   visibility: hidden;
   opacity: 0;
@@ -198,12 +223,41 @@ header ul li input:focus + .searchHistory{
   border: solid 2px #f3f3f3;
   border-top-color: transparent;
 }
+.searchHistoryProfile{
+  position: relative; bottom: 10px;
+}
+.searchHistoryDeleteBtn{
+  position: absolute; 
+  right: 30px; 
+  padding-top: 7px; 
+  cursor: crosshair;
+}
 .searchHistory a{
   width: 100%;
   display: block;
   margin-top: 10px;
   transition: all 500ms;
   padding: 5px;
+}
+#searchAreaClear{
+  display: inline-block; 
+  background-color: transparent;
+  position: relative; 
+  padding: 5px; 
+  width: 30px; 
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  right: 40px; 
+  transition: 300ms all;
+}
+#searchAreaClear:hover{
+  background-color: rgb(255, 111, 111);
+  color: white;
+}
+header ul li input:focus + .searchHistory +  #searchAreaClear{
+  visibility: visible;
+  opacity: 1;
 }
 .searchHistory a:hover{
   background-color: #F2F2F2;
@@ -213,6 +267,22 @@ header ul li input:focus + .searchHistory{
   display: flex;
   justify-content: center;
   padding: 20px;
+}
+main section:nth-child(1){
+  padding-left: 100px; 
+  padding-right: 100px; 
+  padding-top: 30px;
+}
+main section:nth-child(1) h6{
+  text-align: right; 
+  padding-top: 5px; 
+  text-decoration: underline; 
+  cursor: pointer;
+}
+main section:nth-child(2){
+  padding-left: 100px; 
+  padding-right: 100px; 
+  padding-top: 30px;
 }
 .histories .profiles{
   width: 85px;
@@ -243,6 +313,7 @@ header ul li input:focus + .searchHistory{
 .profile{
   position: relative;
   top: 12px;
+  border-radius: 50%;
 }
 .like{
   position: relative;
@@ -341,6 +412,38 @@ header ul li input:focus + .searchHistory{
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+#openReelsModal1{
+  cursor: pointer; 
+  border-radius: 10px; 
+  position: absolute; 
+  left: 350px; 
+  top: 20px;
+}
+#openReelsModal1 + svg{
+  position: absolute; 
+  left:385px; 
+  top:100px; 
+}
+#openReelsModal2{
+  cursor: pointer; 
+  border-radius: 10px; 
+  position: absolute; 
+  left: 350px; 
+  top: 20px;
+}
+#openReelsModal2 + svg{
+  position: absolute; 
+  left:385px; 
+  top:100px; 
+}
+.openReels{
+  filter: blur(2px);
+  transition: 500ms all;
+}
+.openReels:hover{
+  filter: blur(0px);
 }
 
 /* Next & previous buttons */
@@ -455,4 +558,40 @@ header ul li input:focus + .searchHistory{
 .contextMenu ul li:hover{
   background-color: #eaeaea;
   width: 100%;
+}
+.reelsModalContent video{
+  position: relative;
+  left: 10%;
+  border-radius: 10px;
+}
+.reelsModalContent{
+  background: rgba(0, 0, 0, 0) !important;
+  overflow-y: hidden;
+  display: none;
+}
+#prev, #next{
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+#prev2, #next2{
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+#prev3, #next3{
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+#prev4, #next4{
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.imgBox > img{
+  transition: 500ms all;
+}
+section .grid .imgBox > img:hover{
+  transform: scaleX(1.1);
 }
