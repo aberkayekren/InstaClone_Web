@@ -1,4 +1,5 @@
 var html = document.getElementById("html");
+var main = document.getElementById("main");
 /*First Modal*/
 var modal1 = document.getElementById("postModal1");
 var btn1 = document.getElementById("openModal1");
@@ -153,21 +154,23 @@ span9.onclick = function() {
   html.style.overflowY = "auto";
 }
 
-/*Profile Modal*/
-var modalProfile = document.getElementById("postModalProfile");
-var btnProfile = document.getElementById("openModalProfile");
-var spanProfile = document.getElementById("modalKptProfile");
+/*Reels Modal - 1*/
+var reelsModal1 = document.getElementById("reelsModal1");
+var reelsBtn1 = document.getElementById("openReelsModal1");
+var reelsSpan1 = document.getElementById("reelsModalkAPAT1");
 
-btnProfile.onclick = function(){
-  modalProfile.style.visibility = "visible";
-  modalProfile.style.opacity = "1";
+reelsBtn1.onclick = function(){
+  reelsModal1.style.visibility = "visible";
+  reelsModal1.style.opacity = "1";
+  main.style.filter = "blur(5px)";
   html.style.overflowY = "hidden";
 }
 
-spanProfile.onclick = function() {
-  modalProfile.style.visibility = "hidden";
-  modalProfile.style.opacity = "0";
+reelsSpan1.onclick = function() {
+  reelsModal1.style.visibility = "hidden";
+  reelsModal1.style.opacity = "0";
   html.style.overflowY = "auto";
+  main.style.filter = "blur(0px)";
 }
 
 window.onclick = function(event) {
@@ -215,5 +218,8 @@ window.onclick = function(event) {
     modal9.style.visibility = "hidden";
     modal9.style.opacity = "0";
     html.style.overflowY = "auto";
+  }
+  else{
+    null;
   }
 }

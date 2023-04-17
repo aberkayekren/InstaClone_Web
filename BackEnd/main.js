@@ -1,3 +1,4 @@
+/*Loading Page*/ 
 window.scrollTo(0, 0);
 window.addEventListener('load', fg_load)
 
@@ -9,7 +10,7 @@ function fg_load() {
     document.getElementById('html').style.overflowY = "auto"}, 400);
 }
 
-
+/*Slide Show*/
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -35,4 +36,17 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
+}
+
+/*Ana Sayfada Üstüne Gelinen Videoyu Oynatma*/
+function playVideo(x) {
+  x.currentTime = 0;
+  x.play();
+  setTimeout(function() {
+    x.pause();
+  }, 7000);
+}
+
+function pauseVideo(x) {
+  x.pause();
 }
