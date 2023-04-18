@@ -1,5 +1,6 @@
 var html = document.getElementById("html");
 var main = document.getElementById("main");
+
 /*First Modal*/
 var modal1 = document.getElementById("postModal1");
 var btn1 = document.getElementById("openModal1");

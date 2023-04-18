@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat Uygulaması</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="chatbox">
+      <div class="chatlogs">
+      </div>
+      <div class="chat-form">
+        <textarea id="message-input" placeholder="Mesajınızı buraya yazın..."></textarea>
+        <button id="send-button">Gönder</button>
+      </div>
+    </div>
+    <script>
+const messageInput = document.getElementById('message-input');
+const sendButton = document.getElementById('send-button');
+const chatLogs = document.querySelector('.chatlogs');
+
+sendButton.addEventListener('click', function() {
+  const message = messageInput.value;
+  if (message !== '') {
+    addMessage('self', message);
+    messageInput.value = '';
+    setTimeout(function() {
+      addMessage('friend', 'Bir şeyler yazıyor...');
+    }, 1000);
+  }
+});
+
+function addMessage(user, message) {
+  const chat = document.createElement('div');
+  const userPhoto = document.createElement('div');
+  const chatMessage = document.createElement('p');
+  chat.classList.add('chat', user);
+  userPhoto.classList.add('user-photo');
+  chatMessage.classList.add('chat-message');
+  chatMessage.innerText = message;
+  chat.appendChild(userPhoto);
+  chat.appendChild(chatMessage);
+  chatLogs.appendChild(chat);
+}
+    </script>
+  </body>
+</html>

@@ -23,6 +23,7 @@ videoElements.forEach((video) => {
 });
 
 /*Reels 1 Prev-Next*/
+
 const reels = document.querySelectorAll('.reelsVideo');
 const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');

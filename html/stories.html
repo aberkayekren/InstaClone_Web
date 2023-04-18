@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta Clone - Hikayeler</title>
+    <link rel="stylesheet" href="/Stylesheets/main.css">
+    <link rel="shortcut icon" href="/Image/logo.png" type="image/x-icon">
+  </head>
+  <style>
+    
+  </style>
+<body style="background-color: rgba(0, 0, 0, 0.8);">
+  <header>
+    <ul style="justify-content: space-between;">
+      <li>
+        <a href="/html/index.html" style="position: relative; bottom: 20px;"><img width="200px" src="/Image/logo do instagram_10.png" alt=""></a>
+      </li>
+      <li>
+        <a href="/html/index.html" style="color: white; font-size: xx-large;">X</a>
+      </li>
+    </ul>
+  </header>
+
+  <main style="position: relative; bottom: 70px;">
+    <div class="storyBox" style="text-align: center;">
+      <div class="imgBox">
+        <div class="profileImg" style="text-align: left; position: relative; margin: auto; width: 590px; margin-bottom: 20px; color: white;">
+          <img src="/Image/ornekResim.png" width="30px" height="30px" style="text-align: left; border-radius: 50%;" class="profile" alt=""> aberkayekren 
+        </div>
+        <div class="storyControl">
+          <div class="play">
+            <div id="play">
+
+            </div>
+            <div id="pause">
+              <svg width="24" style="margin-right: 30px;" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 19C9.1 19 10 18.1 10 17V7C10 5.9 9.1 5 8 5C6.9 5 6 5.9 6 7V17C6 18.1 6.9 19 8 19ZM14 7V17C14 18.1 14.9 19 16 19C17.1 19 18 18.1 18 17V7C18 5.9 17.1 5 16 5C14.9 5 14 5.9 14 7Z" fill="white"/>
+              </svg>
+            </div>
+          </div>
+          <div class="voice">
+            <div id="soundOn">
+              <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.7847 6.40342H2.21388C1.75933 6.40342 1.3234 6.59353 1.00198 6.93193C0.680569 7.27033 0.5 7.7293 0.5 8.20787V11.8168C0.5 12.2954 0.680569 12.7543 1.00198 13.0927C1.3234 13.4311 1.75933 13.6212 2.21388 13.6212H4.7847M4.7847 6.40342V13.6212M4.7847 6.40342L11.6402 1.3329C11.8885 1.15203 12.1778 1.04343 12.4787 1.01808C12.7797 0.992727 13.0817 1.05153 13.3541 1.18854C13.6208 1.35052 13.8411 1.58513 13.9919 1.86773C14.1427 2.15032 14.2184 2.47046 14.211 2.79451V17.2302C14.2039 17.5711 14.1051 17.9029 13.9261 18.1871C13.7471 18.4714 13.4953 18.6964 13.1999 18.8361C12.9274 18.9731 12.6254 19.0319 12.3245 19.0066C12.0235 18.9812 11.7343 18.8726 11.486 18.6918L4.7847 13.6212M17.6388 7.30565C18.2346 8.06404 18.5402 9.02923 18.4957 10.0123C18.5402 10.9954 18.2346 11.9606 17.6388 12.719" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div id="soundOf">
+
+            </div>
+          </div>
+          <div class="storyMore">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>
+          </div>
+        </div>
+        <div data-slide="slide" class="slide">
+          <div class="slide-items">
+            <img src="/Image/ornekResim.png" width="600px" height="600px" alt="Img 1">
+            <img src="/Image/ornekResim.png" width="600px" height="600px" alt="Img 1">
+            <img src="/Image/ornekResim.png" width="600px" height="600px" alt="Img 1">
+            <img src="/Image/ornekResim.png" width="600px" height="600px" alt="Img 1" class="lastPhoto">
+          </div>
+          <div class="slide-nav">
+            <div class="slide-thumb"></div>
+            <button class="slide-prev">geri</button>
+            <button class="slide-next">ileri</button>
+          </div>
+        </div>
+      </div>
+      <div class="storyContent">
+        <input type="text" placeholder="Yanıt vermek için tıklayın..."  name="" id="" style="width: 460px; padding: 10px; background-color: transparent; color: white; text-indent: 15px; border-radius: 40px; border: white 1px solid;">
+        <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="30" role="img" viewBox="0 0 24 24" width="30"><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
+      </div>
+      <div class="share">
+          <svg width="30" height="30" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.7871 8.74808C17.9401 8.66309 18.035 8.50182 18.035 8.32681C18.035 8.15179 17.9401 7.99053 17.7871 7.90553L15.5873 6.68341C11.2533 4.27565 6.68463 2.3171 1.95243 0.838291L1.3114 0.637969C1.16507 0.592241 1.00571 0.618864 0.882193 0.709674C0.758674 0.800484 0.68573 0.944646 0.68573 1.09796V6.64007C0.68573 6.89639 0.886363 7.10786 1.14232 7.12133L2.11546 7.17255C4.48808 7.29742 6.84622 7.61923 9.16554 8.13463L9.39523 8.18567C9.44633 8.19703 9.46847 8.21793 9.48078 8.23451C9.49632 8.25543 9.50845 8.28766 9.50845 8.32681C9.50845 8.36596 9.49632 8.39818 9.48078 8.41911C9.46847 8.43569 9.44633 8.45659 9.39523 8.46794L9.16556 8.51898C6.84622 9.03439 4.48807 9.35619 2.11544 9.48106L1.14232 9.53228C0.886362 9.54575 0.68573 9.75722 0.68573 10.0135V15.5557C0.68573 15.709 0.758673 15.8531 0.882193 15.9439C1.00571 16.0348 1.16507 16.0614 1.3114 16.0156L1.95244 15.8153C6.68463 14.3365 11.2533 12.378 15.5873 9.97021L17.7871 8.74808Z" stroke="rgb(245, 245, 245)" stroke-linejoin="round"/>
+          </svg></div>
+      </div>
+    </div>
+  </main>
+  <style>
+    .storyContent{
+      position: relative;
+      margin: auto;
+      width: 600px;
+      text-align: center;
+      margin-top: 15px;
+    }
+    .storyContent input, .storyContent div{
+      display: flex !important;
+      justify-content: center !important;
+    }
+    .storyContent div{
+      position: absolute;
+      right: 10px;
+      top: 3px;
+    }
+    .storyContent .like{
+      right: 80px;
+    } 
+    .storyControl div{
+      float: left;
+      position: absolute;
+      right: 28%;
+      top: 2%;
+      margin-right: 30px;
+    }
+    .slide {
+      max-width: 600px;
+      margin: 20px auto;
+      display: grid;
+      box-shadow: 0 4px 20px 2px rgba(0, 0, 0, 0.4);
+      transition: all 300ms;
+    }
+
+    .slide-items {
+      position: relative;
+      grid-area: 1/1;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .slide-nav {
+      grid-area: 1/1;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr;
+    }
+
+    .slide-nav button {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      opacity: 0;
+    }
+
+    .slide-items > * {
+      position: absolute;
+      top: 0px;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .slide-items > .active {
+      position: relative;
+      opacity: 1;
+      pointer-events: initial;
+    }
+
+    .slide-thumb {
+      display: flex;
+      grid-column: 1 / 3;
+    }
+
+    .slide-thumb > span {
+      flex: 1;
+      display: block;
+      height: 3px;
+      background: rgba(0, 0, 0, 0.4);
+      margin: 5px;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .slide-thumb > span.active::after {
+      content: '';
+      display: block;
+      height: inherit;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 3px;
+      transform: translateX(-100%);
+      animation: thumb 5s forwards linear;
+    }
+
+    @keyframes thumb {
+      to {
+        transform: initial;
+      }
+    }
+  </style>
+
+  <script>
+  class SlideStories {
+  constructor(id) {
+    this.slide = document.querySelector(`[data-slide="${id}"]`);
+    this.active = 0;
+    this.init();
+  }
+
+  activeSlide(index) {
+    this.active = index;
+    this.items.forEach((item) => item.classList.remove('active'));
+    this.items[index].classList.add('active');
+    this.thumbItems.forEach((item) => item.classList.remove('active'));
+    this.thumbItems[index].classList.add('active');
+    this.autoSlide();
+  }
+
+  prev() {
+    if (this.active > 0) {
+      this.activeSlide(this.active - 1);
+    } else {
+      this.activeSlide(this.items.length - 1);
+    }
+  }
+
+  next() {
+    if (this.active < this.items.length - 1) {
+      this.activeSlide(this.active + 1);
+    } else {
+      this.activeSlide(0);
+    }
+  }
+
+  addNavigation() {
+    const nextBtn = this.slide.querySelector('.slide-next');
+    const prevBtn = this.slide.querySelector('.slide-prev');
+    nextBtn.addEventListener('click', this.next);
+    prevBtn.addEventListener('click', this.prev);
+  }
+
+  addThumbItems() {
+    this.items.forEach(() => (this.thumb.innerHTML += `<span></span>`));
+    this.thumbItems = Array.from(this.thumb.children);
+  }
+
+  autoSlide() {
+    clearTimeout(this.timeout);
+    this.timeout = setTimeout(this.next, 5000);
+  }
+
+  init() {
+    this.next = this.next.bind(this);
+    this.prev = this.prev.bind(this);
+    this.items = this.slide.querySelectorAll('.slide-items > *');
+    this.thumb = this.slide.querySelector('.slide-thumb');
+    this.addThumbItems();
+    this.activeSlide(0);
+    this.addNavigation();
+    this.slide.style.visibilty = 'visible';
+    this.slide.style.opacity = '1';
+  }
+}
+
+const slide = new SlideStories('slide');
+
+
+
+  </script>
+</body>
+</html>

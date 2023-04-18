@@ -439,13 +439,12 @@ main section:nth-child(2){
   top:100px; 
 }
 .openReels{
-  filter: blur(2px);
+  filter: blur(2px) !important;
   transition: 500ms all;
 }
 .openReels:hover{
-  filter: blur(0px);
+  filter: blur(0px) !important; 
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -594,4 +593,127 @@ main section:nth-child(2){
 }
 section .grid .imgBox > img:hover{
   transform: scaleX(1.1);
+}
+
+.chatbox {
+	width: 600px;
+	height: 500px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	overflow: hidden;
+  padding-top: 10px;
+}
+
+.chatlogs {
+	padding: 10px;
+	height: 400px;
+	overflow-y: scroll;
+}
+
+.chat {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: flex-start;
+	margin-bottom: 10px;
+}
+
+.friend {
+	margin-left: auto;
+	display: flex;
+}
+
+.self {
+	margin-right: auto;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.self .user-photo{
+	width: 50px;
+	height: 50px;
+	background-color: #ccc;
+	border-radius: 50%;
+	margin-right: 10px;
+  background: url(/Image/ornekResim.png);
+  background-size: contain;
+}
+.friend .user-photo{
+	width: 50px;
+	height: 50px;
+	background-color: #ccc;
+	border-radius: 50%;
+	margin-right: 10px;
+  background: url(/Image/aiko.jpg);
+  background-size: contain;
+}
+
+.self .chat-message {
+	width: 80%;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #f1f0f0;
+	font-size: 1rem;
+	line-height: 1.4;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.friend .chat-message {
+	width: 80%;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #fbfbfb;
+	font-size: 1rem;
+	line-height: 1.4;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.chat-form {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	padding: 10px;
+  border-radius: 10px;
+  position: relative; 
+  top: 18px;
+	background-color: #f1f0f0;
+}
+
+.chat-form textarea {
+	flex-grow: 1;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	resize: none;
+}
+
+.chat-form button {
+	padding: 10px;
+	background-color: #4c78af;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  margin-left: 20px;
+  height: 50px;
+  transition: all 500ms;
+}
+
+.chat-form button:hover {
+	background-color: #3e758e;
+}
+.people{
+  padding: 20px;
+}
+.newMessage{
+  background-color: #0064E1;
+  width: 260px; 
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  color: white;
+  transition: 500ms all;
+}
+.newMessage:hover{
+  background-color: #1f85ec;
 }
