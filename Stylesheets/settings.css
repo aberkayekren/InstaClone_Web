@@ -1,0 +1,49 @@
+.textarea-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.textarea-container textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #333;
+  border: none;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.textarea-container textarea:focus {
+  outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.textarea-container label {
+  position: absolute;
+  top: 5px;
+  left: 9rem;
+  font-size: 1.6rem;
+  color: #999;
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.textarea-container textarea:focus + label,
+.textarea-container textarea:not(:placeholder-shown) + label {
+  transform: translateY(-2rem);
+  font-size: 1.2rem;
+  color: #666;
+}
+#saveCahange{
+  width: 100%; margin-top: 40px; padding: 20px; font-size: x-large; border-radius: 20px; background-color: #0081fb; color: white;
+  transition: 500ms all;
+}
+#saveCahange:hover{
+  background-color: #0070d8;
+}

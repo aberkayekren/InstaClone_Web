@@ -1,30 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Chat Uygulaması</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-     * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+function scrollToBottom() {
+  const container = document.getElementById('message-container');
+  container.lastElementChild.scrollIntoView({ behavior: 'smooth' });
 }
 
-
-    </style>
-  </head>
-  <body>
-    <div class="chatbox">
-      <div class="chatlogs">
-      </div>
-      <div class="chat-form">
-        <textarea id="message-input" placeholder="Mesajınızı buraya yazın..."></textarea>
-        <button id="send-button">Gönder</button>
-      </div>
-    </div>
-    <script>
-const messageInput = document.getElementById('message-input');
+      const messageInput = document.getElementById('message-input');
 const sendButton = document.getElementById('send-button');
 const chatLogs = document.querySelector('.chatlogs');
 
@@ -50,7 +29,5 @@ function addMessage(user, message) {
   chat.appendChild(userPhoto);
   chat.appendChild(chatMessage);
   chatLogs.appendChild(chat);
+  scrollToBottom();
 }
-    </script>
-  </body>
-</html>

@@ -544,17 +544,46 @@ main section:nth-child(2){
   z-index: 99;
   transition: 300ms all;
 }
+.more{
+  width: 300px;
+  height: max-content;
+  background-color: white;
+  position: absolute;
+  right: 20px;
+  bottom: 165px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+  transition: 300ms all;
+}
+.notificationsPage{
+  visibility: hidden;
+  opacity: 0;
+  transition: all 500ms;
+}
+.notificationsOpen:hover + .notificationsPage ,.notificationsPage:hover{
+  visibility: visible;
+  opacity: 1;
+}
 .postMore:hover + .contextMenu, .contextMenu:hover{
   visibility: visible;
   opacity: 1;
 }
-.contextMenu ul li{
+.openMoreModal:hover + .more, .more:hover{
+  visibility: visible;
+  opacity: 1;
+}
+.contextMenu ul li, .more ul li{
   margin-top: 10px;
   padding: 10px;
   transition: all 500ms;
   border-radius: 20px;
 }
-.contextMenu ul li:hover{
+.contextMenu ul li:hover, .more ul li:hover{
   background-color: #eaeaea;
   width: 100%;
 }
@@ -649,7 +678,8 @@ section .grid .imgBox > img:hover{
 }
 
 .self .chat-message {
-	width: 80%;
+	max-width: 80%;
+  height: max-content;
 	padding: 15px;
 	border-radius: 10px;
 	background-color: #f1f0f0;
@@ -659,7 +689,8 @@ section .grid .imgBox > img:hover{
 }
 
 .friend .chat-message {
-	width: 80%;
+	max-width: 80%;
+  height: max-content;
 	padding: 15px;
 	border-radius: 10px;
 	background-color: #fbfbfb;
@@ -716,4 +747,118 @@ section .grid .imgBox > img:hover{
 }
 .newMessage:hover{
   background-color: #1f85ec;
+}
+.modeControl input{
+  position: absolute;
+  opacity: 0;
+}
+.modeControl input:checked + span{
+  display: none;
+  cursor: pointer;
+}
+.modeControl input:checked + span + span{
+  display: inline-block !important;
+}
+.modeControl span{
+  display: inline-block;
+  fill: rgb(53, 53, 53);
+}
+.dark .modeControl span{
+  display: inline-block;
+  fill: white;
+}
+.modeControl #lightContent{
+  display: none;
+  cursor: pointer;
+}
+.selected{
+  background-color: #ececec;
+  border: #0081fb solid 5px;
+  position: absolute;
+  padding: 5px;
+  right: 7%;
+  bottom: 105px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.activeProfile{
+  background-color: transparent;
+  padding: 20px;
+  padding-top: 0px;
+  transition: all 500ms;
+}
+.activeProfile:hover{
+  border-radius: 20px;
+  background-color: #ececec;
+}
+.complaint-box {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.complaint {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.reportBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reportBtn:hover {
+  background-color: #3e8e41;
+}
+.PublishForm {
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  position: relative;
+}
+.kamera-ikonu {
+display: none;
+height: 20px;
+width: 20px;
+background-image: url("kamera-ikonu.png");
+background-size: contain;
+background-repeat: no-repeat;
+}
+.input-butonu {
+display: inline-block;
+background-color: #007bff;
+color: #fff;
+font-size: 1.2rem;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.input-butonu:hover {
+background-color: #0069d9;
+}
+.uploadingPhoto {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: none;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

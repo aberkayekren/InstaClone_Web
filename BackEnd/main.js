@@ -50,3 +50,28 @@ function playVideo(x) {
 function pauseVideo(x) {
   x.pause();
 }
+
+//Gönderme efekti
+function clearComplaint() {
+  document.getElementById("complaint").value = "";
+  alert("Şikayetinizi bildirip bize geri dönüş yaptığını için teşekkürler.");
+}
+
+//Sign Out
+function confirmRedirect() {
+  if (confirm("Emin misiniz?")) {
+    window.location.href = "/html/loginPage.html";
+  }
+}
+
+//Dosya Yükleme
+const dosyaInput = document.getElementById('dosya');
+  const yuklenenFotograf = document.getElementById('yuklenen-fotograf');
+
+  dosyaInput.addEventListener('change', () => {
+    const dosya = dosyaInput.files[0];
+    yuklenenFotograf.style.display = "block";
+    if (dosya) {
+      yuklenenFotograf.src = URL.createObjectURL(dosya);
+    }
+  });

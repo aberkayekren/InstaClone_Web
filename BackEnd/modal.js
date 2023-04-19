@@ -155,6 +155,55 @@ span9.onclick = function() {
   html.style.overflowY = "auto";
 }
 
+/*Report Modal*/
+var reportModal = document.getElementById("reportModal");
+var reportBtn = document.getElementById("openReportModal");
+var reportClose = document.getElementById("reportModalKapat");
+
+reportBtn.onclick = function(){
+  reportModal.style.visibility = "visible";
+  reportModal.style.opacity = "1";
+  html.style.overflowY = "hidden";
+}
+
+reportClose.onclick = function() {
+  reportModal.style.visibility = "hidden";
+  reportModal.style.opacity = "0";
+  html.style.overflowY = "auto";
+}
+/*Account Modal*/
+var acoountModal = document.getElementById("accountModal");
+var acoountBtn = document.getElementById("openAccountModal");
+var acoountClose = document.getElementById("accountModalKapat");
+
+acoountBtn.onclick = function(){
+  acoountModal.style.visibility = "visible";
+  acoountModal.style.opacity = "1";
+  html.style.overflowY = "hidden";
+}
+
+acoountClose.onclick = function() {
+  acoountModal.style.visibility = "hidden";
+  acoountModal.style.opacity = "0";
+  html.style.overflowY = "auto";
+}
+/*Publish Modal*/
+var publishModal = document.getElementById("publishModal");
+var publishButton = document.getElementById("openPublishModal");
+var publishClose = document.getElementById("publishModalKapat");
+
+publishButton.onclick = function(){
+  publishModal.style.visibility = "visible";
+  publishModal.style.opacity = "1";
+  html.style.overflowY = "hidden";
+}
+
+publishClose.onclick = function() {
+  publishModal.style.visibility = "hidden";
+  publishModal.style.opacity = "0";
+  html.style.overflowY = "auto";
+}
+
 /*Reels Modal - 1*/
 var reelsModal1 = document.getElementById("reelsModal1");
 var reelsModalContent1 = document.getElementById("reelsModalContent1");
@@ -287,6 +336,21 @@ window.onclick = function(event) {
   else if (event.target == modal9){
     modal9.style.visibility = "hidden";
     modal9.style.opacity = "0";
+    html.style.overflowY = "auto";
+  }
+  else if (event.target == reportModal){
+    reportModal.style.visibility = "hidden";
+    reportModal.style.opacity = "0";
+    html.style.overflowY = "auto";
+  }
+  else if (event.target == acoountModal){
+    acoountModal.style.visibility = "hidden";
+    acoountModal.style.opacity = "0";
+    html.style.overflowY = "auto";
+  }
+  else if (event.target == publishModal){
+    publishModal.style.visibility = "hidden";
+    publishModal.style.opacity = "0";
     html.style.overflowY = "auto";
   }
   else{
