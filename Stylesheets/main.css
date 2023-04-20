@@ -9,9 +9,34 @@
   text-decoration: none;
   color: #545454;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 6px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(45, 45, 45); 
+  z-index: -9999;
+  border-radius: 100px;
+  transition: all 500ms;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+html{
+  overflow-x:hidden;
+}
 #html{
   scroll-behavior: smooth;
   overflow-y:hidden;
+  overflow-x:hidden;
 }
 #center{
   position: absolute;
@@ -69,10 +94,8 @@ nav{
   background-clip: padding-box; 
   border: solid 2px transparent; 
   padding: 1px;
-  border-left-color: red;
-  border-top-color: red;
-  border-right-color: orange;
-  border-bottom-color: orange;
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to right, rgb(255, 0, 0), rgb(255, 188, 63), rgb(255, 188, 63), rgb(229, 87, 210)) border-box;
   border-radius: 50%;
 }
 nav ul li:nth-child(3),
@@ -289,12 +312,10 @@ main section:nth-child(2){
   height: 85px;
   margin-left: 10px;
   background-clip: padding-box; 
-  border: solid 2px transparent; 
-  border-left-color: red;
-  border-top-color: red;
-  border-right-color: orange;
-  border-bottom-color: orange;
+  background: linear-gradient(white, white) padding-box,
+  linear-gradient(to right, rgb(255, 0, 0), rgb(255, 188, 63), rgb(255, 188, 63), rgb(229, 87, 210)) border-box;
   border-radius: 50%;
+  border: 2px solid transparent;
   transition: 300ms all;
   padding: 1px;
 }
@@ -625,7 +646,7 @@ section .grid .imgBox > img:hover{
 }
 
 .chatbox {
-	width: 600px;
+  width:600px;
 	height: 500px;
 	background-color: #fff;
 	border-radius: 10px;

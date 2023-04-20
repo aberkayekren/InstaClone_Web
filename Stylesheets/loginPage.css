@@ -38,15 +38,20 @@ label{
 }
 input{
 	width: 60%;
-	height: 20px;
+	font-size: 15px;
 	background: #e0dede;
 	justify-content: center;
 	display: flex;
-	margin: 20px auto;
+	margin: 15px auto;
 	padding: 10px;
 	border: none;
 	outline: none;
 	border-radius: 5px;
+	transition: all 500ms;
+}
+input:focus{
+	background-color: #eaeaea;
+	box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
 }
 button{
 	width: 60%;
