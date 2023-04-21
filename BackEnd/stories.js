@@ -55,8 +55,6 @@ class SlideStories {
     this.addThumbItems();
     this.activeSlide(0);
     this.addNavigation();
-    this.slide.style.visibilty = 'visible';
-    this.slide.style.opacity = '1';
   }
 }
 

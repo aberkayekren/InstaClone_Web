@@ -136,7 +136,7 @@ nav ul li:nth-child(7):hover,
 nav ul li:nth-child(8):hover,
 nav ul li:nth-child(9):hover{
   background-color: #F2F2F2; 
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .dark nav ul li:nth-child(3):hover,
 .dark nav ul li:nth-child(4):hover,
@@ -845,7 +845,7 @@ section .grid .imgBox > img:hover{
 }
 .PublishForm {
   width: 500px;
-  height: 400px;
+  height: 200px;
   padding: 20px;
   position: relative;
 }
@@ -872,14 +872,15 @@ transition: all 0.3s ease;
 background-color: #0069d9;
 }
 .uploadingPhoto {
-  max-width: 100%;
-  max-height: 100%;
+  position: absolute;
+  bottom: 20px;
+  width: 645px;
+  height: 400px;
+  left: -73px;
+  background-color: rgba(0, 0, 0, 0.2);
+  object-fit: contain;
   object-fit: contain;
   display: none;
   margin: auto;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }

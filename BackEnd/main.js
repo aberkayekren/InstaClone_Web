@@ -65,13 +65,3 @@ function confirmRedirect() {
 }
 
 //Dosya Yükleme
-const dosyaInput = document.getElementById('dosya');
-const yuklenenFotograf = document.getElementById('yuklenen-fotograf');
-
-dosyaInput.addEventListener('change', () => {
-  const dosya = dosyaInput.files[0];
-  yuklenenFotograf.style.display = "block";
-  if (dosya) {
-    yuklenenFotograf.src = URL.createObjectURL(dosya);
-  }
-});
