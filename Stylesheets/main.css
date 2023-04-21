@@ -9,18 +9,20 @@
   text-decoration: none;
   color: #545454;
 }
+
 /* width */
 ::-webkit-scrollbar {
-  width: 6px; 
+  width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   border-radius: 100px;
 }
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(45, 45, 45); 
+  background: rgb(45, 45, 45);
   z-index: -9999;
   border-radius: 100px;
   transition: all 500ms;
@@ -28,36 +30,44 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #000000; 
+  background: #000000;
 }
-html{
-  overflow-x:hidden;
-}
-#html{
-  scroll-behavior: smooth;
-  overflow-y:hidden;
-  overflow-x:hidden;
-}
-#center{
-  position: absolute;
-  left: 48%; 
-  top: 350px;
-}
-main{
+
+html {
   overflow-x: hidden;
 }
-img{
+
+#html {
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#center {
+  position: absolute;
+  left: 48%;
+  top: 350px;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+img {
   object-fit: fill;
 }
-body{
+
+body {
   background-color: rgb(250, 250, 250);
   transition: all 500ms;
 }
-.dark{
+
+.dark {
   background-color: rgb(32, 32, 32);
   color: #F2F2F2;
 }
-nav{
+
+nav {
   text-align: center;
   height: 100vh;
   position: fixed;
@@ -68,43 +78,51 @@ nav{
   z-index: 2;
   transition: all 500ms;
 }
-#navbarLogo{
-  position: relative; 
+
+#navbarLogo {
+  position: relative;
   top: -40px;
 }
-.dark nav{
+
+.dark nav {
   background-color: rgb(36, 36, 36);
   color: #ffffff;
 }
-.information{
+
+.information {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
-.information h3{
+
+.information h3 {
   font-weight: 700;
 }
-.information h6{
+
+.information h6 {
   font-weight: 200;
 }
-.information div{
+
+.information div {
   margin: 10px;
 }
-#profileImage{
-  background-clip: padding-box; 
-  border: solid 2px transparent; 
+
+#profileImage {
+  background-clip: padding-box;
+  border: solid 2px transparent;
   padding: 1px;
   background: linear-gradient(white, white) padding-box,
-  linear-gradient(to right, rgb(255, 0, 0), rgb(255, 188, 63), rgb(255, 188, 63), rgb(229, 87, 210)) border-box;
+    linear-gradient(to right, rgb(255, 0, 0), rgb(255, 188, 63), rgb(255, 188, 63), rgb(229, 87, 210)) border-box;
   border-radius: 50%;
 }
+
 nav ul li:nth-child(3),
 nav ul li:nth-child(4),
 nav ul li:nth-child(5),
 nav ul li:nth-child(6),
 nav ul li:nth-child(7),
 nav ul li:nth-child(8),
-nav ul li:nth-child(9){
+nav ul li:nth-child(9) {
   text-align: left;
   width: 100%;
   font-size: large;
@@ -113,51 +131,57 @@ nav ul li:nth-child(9){
   padding-left: 20px;
   transition: all 300ms;
 }
+
 nav ul li:nth-child(3) svg,
 nav ul li:nth-child(4) svg,
 nav ul li:nth-child(5) svg,
 nav ul li:nth-child(6) svg,
 nav ul li:nth-child(7) svg,
 nav ul li:nth-child(8) svg,
-nav ul li:nth-child(9) svg{
+nav ul li:nth-child(9) svg {
   position: relative;
   top: 5px;
   right: 10px;
   transition: all 300ms;
 }
-nav ul li:nth-child(8){
+
+nav ul li:nth-child(8) {
   margin-top: 40px;
 }
+
 nav ul li:nth-child(3):hover,
 nav ul li:nth-child(4):hover,
 nav ul li:nth-child(5):hover,
 nav ul li:nth-child(6):hover,
 nav ul li:nth-child(7):hover,
 nav ul li:nth-child(8):hover,
-nav ul li:nth-child(9):hover{
-  background-color: #F2F2F2; 
+nav ul li:nth-child(9):hover {
+  background-color: #F2F2F2;
   border-radius: 10px;
 }
+
 .dark nav ul li:nth-child(3):hover,
 .dark nav ul li:nth-child(4):hover,
 .dark nav ul li:nth-child(5):hover,
 .dark nav ul li:nth-child(6):hover,
 .dark nav ul li:nth-child(7):hover,
 .dark nav ul li:nth-child(8):hover,
-.dark nav ul li:nth-child(9):hover{
-  background-color: #333333; 
+.dark nav ul li:nth-child(9):hover {
+  background-color: #333333;
   border-radius: 20px;
 }
+
 nav ul li:nth-child(3):hover svg,
 nav ul li:nth-child(4):hover svg,
 nav ul li:nth-child(5):hover svg,
 nav ul li:nth-child(6):hover svg,
 nav ul li:nth-child(7):hover svg,
 nav ul li:nth-child(8):hover svg,
-nav ul li:nth-child(9):hover svg{
+nav ul li:nth-child(9):hover svg {
   transform: scale(1.2);
 }
-.line{
+
+.line {
   width: 100%;
   height: 12px;
   position: relative;
@@ -165,74 +189,89 @@ nav ul li:nth-child(9):hover svg{
   border-bottom: #F2F2F2 solid 2px;
   transition: all 500ms;
 }
-.dark .line{
+
+.dark .line {
   border-bottom-color: #333333;
 }
-header ul{
+
+header ul {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
-header ul li{
+
+header ul li {
   margin-left: 20px;
 }
+
 header ul li:nth-child(2),
 header ul li:nth-child(3),
-header ul li:nth-child(4){
+header ul li:nth-child(4) {
   position: relative;
   top: 5px;
   transition: 300ms;
 }
+
 header ul li:nth-child(2):hover,
-header ul li:nth-child(3):hover{
+header ul li:nth-child(3):hover {
   transform: scale(1.2);
 }
-header ul li:nth-child(4) svg{
+
+header ul li:nth-child(4) svg {
   position: relative;
   top: 7px;
   fill: white;
 }
-header ul li:nth-child(4) a{
+
+header ul li:nth-child(4) a {
   border-radius: 20px;
   color: white;
-  background: rgb(254,224,65);
-background: linear-gradient(157deg, rgba(254,224,65,1) 0%, rgba(231,105,142,1) 100%);  padding: 15px;
+  background: rgb(254, 224, 65);
+  background: linear-gradient(157deg, rgba(254, 224, 65, 1) 0%, rgba(231, 105, 142, 1) 100%);
+  padding: 15px;
   transition: all 300ms;
 }
-header ul li:nth-child(4) a:hover{
-  background: #F0927A; 
+
+header ul li:nth-child(4) a:hover {
+  background: #F0927A;
 }
-header ul li input{
+
+header ul li input {
   transition: 500ms all;
   z-index: 1000 !important;
-  padding: 10px; 
-  width: 600px; 
-  border-radius: 20px; 
-  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px; 
+  padding: 10px;
+  width: 600px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
   text-indent: 30px;
-} 
-header ul li input:focus{
+}
+
+header ul li input:focus {
   border-radius: 10px !important;
   box-shadow: rgba(255, 255, 255, 0.14) 0px 3px 8px !important;
   border: solid 2px #ebebeb;
   border-bottom-color: transparent;
 }
-header ul li input:focus + .searchHistory{
+
+header ul li input:focus+.searchHistory {
   visibility: visible;
   opacity: 1;
 }
-#header{
-  width: 75%; 
-  position: relative; 
+
+#header {
+  width: 75%;
+  position: relative;
   left: 370px;
 }
-#searchIcon{
-  position: relative; 
-  top: 7px; 
-  left:40px; 
-  fill:#c2c2c2;
+
+#searchIcon {
+  position: relative;
+  top: 7px;
+  left: 40px;
+  fill: #c2c2c2;
 }
-.searchHistory{
+
+.searchHistory {
   position: absolute;
   left: 137.5px;
   top: 42px;
@@ -241,116 +280,143 @@ header ul li input:focus + .searchHistory{
   z-index: 1;
   border-top-left-radius: 0px !important;
   border-top-right-radius: 0px !important;
-  background-color: white; padding: 10px; width: 600px; height: 300px; position: absolute; border-radius: 20px;text-indent: 30px;
+  background-color: white;
+  padding: 10px;
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  border-radius: 20px;
+  text-indent: 30px;
   transition: 500ms;
   border: solid 2px #f3f3f3;
   border-top-color: transparent;
 }
-.searchHistoryProfile{
-  position: relative; bottom: 10px;
+
+.searchHistoryProfile {
+  position: relative;
+  bottom: 10px;
 }
-.searchHistoryDeleteBtn{
-  position: absolute; 
-  right: 30px; 
-  padding-top: 7px; 
+
+.searchHistoryDeleteBtn {
+  position: absolute;
+  right: 30px;
+  padding-top: 7px;
   cursor: crosshair;
 }
-.searchHistory a{
+
+.searchHistory a {
   width: 100%;
   display: block;
   margin-top: 10px;
   transition: all 500ms;
   padding: 5px;
 }
-#searchAreaClear{
-  display: inline-block; 
+
+#searchAreaClear {
+  display: inline-block;
   background-color: transparent;
-  position: relative; 
-  padding: 5px; 
-  width: 30px; 
+  position: relative;
+  padding: 5px;
+  width: 30px;
   border-radius: 50%;
   visibility: hidden;
   opacity: 0;
-  right: 40px; 
+  right: 40px;
   transition: 300ms all;
 }
-#searchAreaClear:hover{
+
+#searchAreaClear:hover {
   background-color: rgb(255, 111, 111);
   color: white;
 }
-header ul li input:focus + .searchHistory +  #searchAreaClear{
+
+header ul li input:focus+.searchHistory+#searchAreaClear {
   visibility: visible;
   opacity: 1;
 }
-.searchHistory a:hover{
+
+.searchHistory a:hover {
   background-color: #F2F2F2;
   border-radius: 20px;
 }
-.histories{
+
+.histories {
   display: flex;
   justify-content: center;
   padding: 20px;
 }
-main section:nth-child(1){
-  padding-left: 100px; 
-  padding-right: 100px; 
+
+main section:nth-child(1) {
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 30px;
 }
-main section:nth-child(1) h6{
-  text-align: right; 
-  padding-top: 5px; 
-  text-decoration: underline; 
+
+main section:nth-child(1) h6 {
+  text-align: right;
+  padding-top: 5px;
+  text-decoration: underline;
   cursor: pointer;
 }
-main section:nth-child(2){
-  padding-left: 100px; 
-  padding-right: 100px; 
+
+main section:nth-child(2) {
+  padding-left: 100px;
+  padding-right: 100px;
   padding-top: 30px;
 }
-.histories .profiles{
+
+.histories .profiles {
   width: 85px;
   height: 85px;
   margin-left: 10px;
-  background-clip: padding-box; 
+  background-clip: padding-box;
   background: linear-gradient(white, white) padding-box,
-  linear-gradient(to right, rgb(255, 0, 0), rgb(255, 188, 63), rgb(255, 188, 63), rgb(229, 87, 210)) border-box;
+    linear-gradient(to right, rgb(255, 0, 0), rgb(255, 188, 63), rgb(255, 188, 63), rgb(229, 87, 210)) border-box;
   border-radius: 50%;
   border: 2px solid transparent;
   transition: 300ms all;
   padding: 1px;
 }
-.grid{
+
+.grid {
   display: flex;
-  justify-content:stretch;
+  justify-content: stretch;
   position: relative;
   right: 60px;
 }
-.grid .imgBox{
+
+.grid .imgBox {
   margin: 20px;
 }
-.imgBox img{
+
+.imgBox img {
   border-radius: 10px;
 }
-.profile{
+
+.profile {
   position: relative;
   top: 12px;
   border-radius: 50%;
 }
-.like{
+
+.like {
   position: relative;
   top: 15px;
 }
-.comment{
+
+.comment {
   position: relative;
   bottom: 15px;
   left: 80px;
 }
-.save{
+
+.save {
   position: relative;
   bottom: 70px;
   text-align: right;
 }
-#preloader{
+
+#preloader {
   position: fixed;
   left: 0;
   top: 0;
@@ -364,11 +430,13 @@ main section:nth-child(2){
   transition: all 1s;
   overflow-y: hidden;
 }
-#preloader svg{
+
+#preloader svg {
   position: relative;
   top: 220px;
 }
-.loader{
+
+.loader {
   width: 50px;
   height: 50px;
   border: transparent solid 2px;
@@ -380,16 +448,28 @@ main section:nth-child(2){
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
+
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.modal{
+
+.modal {
   position: fixed;
   left: 0;
   top: 0;
@@ -403,9 +483,10 @@ main section:nth-child(2){
   overflow-y: hidden;
   overflow-x: hidden;
   display: inline-block;
-  z-index: 100; 
+  z-index: 100;
 }
-.modalContent{
+
+.modalContent {
   max-width: 50%;
   height: 40%;
   position: relative;
@@ -417,7 +498,8 @@ main section:nth-child(2){
   overflow-x: hidden;
   padding-bottom: 40px;
 }
-.modalKapat{
+
+.modalKapat {
   position: absolute;
   cursor: pointer;
   top: 10px;
@@ -425,49 +507,58 @@ main section:nth-child(2){
   color: white;
   font-size: 24px;
 }
-.commentActivity div{
+
+.commentActivity div {
   margin-top: 10px;
   margin-left: 20px;
 }
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-#openReelsModal1{
-  cursor: pointer; 
-  border-radius: 10px; 
-  position: absolute; 
-  left: 350px; 
+#openReelsModal1 {
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  left: 350px;
   top: 20px;
 }
-#openReelsModal1 + svg{
-  position: absolute; 
-  left:385px; 
-  top:100px; 
+
+#openReelsModal1+svg {
+  position: absolute;
+  left: 385px;
+  top: 100px;
 }
-#openReelsModal2{
-  cursor: pointer; 
-  border-radius: 10px; 
-  position: absolute; 
-  left: 350px; 
+
+#openReelsModal2 {
+  cursor: pointer;
+  border-radius: 10px;
+  position: absolute;
+  left: 350px;
   top: 20px;
 }
-#openReelsModal2 + svg{
-  position: absolute; 
-  left:385px; 
-  top:100px; 
+
+#openReelsModal2+svg {
+  position: absolute;
+  left: 385px;
+  top: 100px;
 }
-.openReels{
+
+.openReels {
   filter: blur(2px) !important;
   transition: 500ms all;
 }
-.openReels:hover{
-  filter: blur(0px) !important; 
+
+.openReels:hover {
+  filter: blur(0px) !important;
 }
+
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -483,7 +574,7 @@ main section:nth-child(2){
   user-select: none;
 }
 
-.prev{
+.prev {
   left: 0;
 }
 
@@ -494,8 +585,9 @@ main section:nth-child(2){
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -530,7 +622,8 @@ main section:nth-child(2){
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -541,15 +634,26 @@ main section:nth-child(2){
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
 }
-.contextMenu{
+
+.contextMenu {
   width: 200px;
   height: max-content;
   background-color: white;
@@ -565,7 +669,8 @@ main section:nth-child(2){
   z-index: 99;
   transition: 300ms all;
 }
-.more{
+
+.more {
   width: 300px;
   height: max-content;
   background-color: white;
@@ -581,218 +686,252 @@ main section:nth-child(2){
   z-index: 99;
   transition: 300ms all;
 }
-.notificationsPage{
+
+.notificationsPage {
   visibility: hidden;
   opacity: 0;
   transition: all 500ms;
 }
-.notificationsOpen:hover + .notificationsPage ,.notificationsPage:hover{
+
+.notificationsOpen:hover+.notificationsPage,
+.notificationsPage:hover {
   visibility: visible;
   opacity: 1;
 }
-.postMore:hover + .contextMenu, .contextMenu:hover{
+
+.postMore:hover+.contextMenu,
+.contextMenu:hover {
   visibility: visible;
   opacity: 1;
 }
-.openMoreModal:hover + .more, .more:hover{
+
+.openMoreModal:hover+.more,
+.more:hover {
   visibility: visible;
   opacity: 1;
 }
-.contextMenu ul li, .more ul li{
+
+.contextMenu ul li,
+.more ul li {
   margin-top: 10px;
   padding: 10px;
   transition: all 500ms;
   border-radius: 20px;
 }
-.contextMenu ul li:hover, .more ul li:hover{
+
+.contextMenu ul li:hover,
+.more ul li:hover {
   background-color: #eaeaea;
   width: 100%;
 }
-.reelsModalContent video{
+
+.reelsModalContent video {
   position: relative;
   left: 10%;
   border-radius: 10px;
 }
-.reelsModalContent{
+
+.reelsModalContent {
   background: rgba(0, 0, 0, 0) !important;
   overflow-y: hidden;
   display: none;
 }
-#prev, #next{
+
+#prev,
+#next {
   background-color: white;
   border-radius: 50%;
   margin-top: 20px;
 }
-#prev2, #next2{
+
+#prev2,
+#next2 {
   background-color: white;
   border-radius: 50%;
   margin-top: 20px;
 }
-#prev3, #next3{
+
+#prev3,
+#next3 {
   background-color: white;
   border-radius: 50%;
   margin-top: 20px;
 }
-#prev4, #next4{
+
+#prev4,
+#next4 {
   background-color: white;
   border-radius: 50%;
   margin-top: 20px;
 }
-.imgBox > img{
+
+.imgBox>img {
   transition: 500ms all;
 }
-section .grid .imgBox > img:hover{
+
+section .grid .imgBox>img:hover {
   transform: scaleX(1.1);
 }
 
 .chatbox {
-  width:600px;
-	height: 500px;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
-	overflow: hidden;
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   padding-top: 10px;
 }
 
 .chatlogs {
-	padding: 10px;
-	height: 400px;
-	overflow-y: scroll;
+  padding: 10px;
+  height: 400px;
+  overflow-y: scroll;
 }
 
 .chat {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: flex-start;
-	margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  margin-bottom: 10px;
 }
 
 .friend {
-	margin-left: auto;
-	display: flex;
+  margin-left: auto;
+  display: flex;
 }
 
 .self {
-	margin-right: auto;
-	display: flex;
-	flex-direction: row-reverse;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.self .user-photo{
-	width: 50px;
-	height: 50px;
-	background-color: #ccc;
-	border-radius: 50%;
-	margin-right: 10px;
+.self .user-photo {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
   background: url(/Image/ornekResim.png);
   background-size: contain;
 }
-.friend .user-photo{
-	width: 50px;
-	height: 50px;
-	background-color: #ccc;
-	border-radius: 50%;
-	margin-right: 10px;
+
+.friend .user-photo {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
   background: url(/Image/aiko.jpg);
   background-size: contain;
 }
 
 .self .chat-message {
-	max-width: 80%;
+  max-width: 80%;
   height: max-content;
-	padding: 15px;
-	border-radius: 10px;
-	background-color: #f1f0f0;
-	font-size: 1rem;
-	line-height: 1.4;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f1f0f0;
+  font-size: 1rem;
+  line-height: 1.4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .friend .chat-message {
-	max-width: 80%;
+  max-width: 80%;
   height: max-content;
-	padding: 15px;
-	border-radius: 10px;
-	background-color: #fbfbfb;
-	font-size: 1rem;
-	line-height: 1.4;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+  font-size: 1rem;
+  line-height: 1.4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .chat-form {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 10px;
   border-radius: 10px;
-  position: relative; 
+  position: relative;
   top: 18px;
-	background-color: #f1f0f0;
+  background-color: #f1f0f0;
 }
 
 .chat-form textarea {
-	flex-grow: 1;
-	padding: 10px;
-	border: none;
-	border-radius: 5px;
-	resize: none;
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
 }
 
 .chat-form button {
-	padding: 10px;
-	background-color: #4c78af;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
+  padding: 10px;
+  background-color: #4c78af;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   margin-left: 20px;
   height: 50px;
   transition: all 500ms;
 }
 
 .chat-form button:hover {
-	background-color: #3e758e;
+  background-color: #3e758e;
 }
-.people{
+
+.people {
   padding: 20px;
 }
-.newMessage{
+
+.newMessage {
   background-color: #0064E1;
-  width: 260px; 
+  width: 260px;
   text-align: center;
   padding: 10px;
   border-radius: 30px;
   color: white;
   transition: 500ms all;
 }
-.newMessage:hover{
+
+.newMessage:hover {
   background-color: #1f85ec;
 }
-.modeControl input{
+
+.modeControl input {
   position: absolute;
   opacity: 0;
 }
-.modeControl input:checked + span{
+
+.modeControl input:checked+span {
   display: none;
   cursor: pointer;
 }
-.modeControl input:checked + span + span{
+
+.modeControl input:checked+span+span {
   display: inline-block !important;
 }
-.modeControl span{
+
+.modeControl span {
   display: inline-block;
   fill: rgb(53, 53, 53);
 }
-.dark .modeControl span{
+
+.dark .modeControl span {
   display: inline-block;
   fill: white;
 }
-.modeControl #lightContent{
+
+.modeControl #lightContent {
   display: none;
   cursor: pointer;
 }
-.selected{
+
+.selected {
   background-color: #ececec;
   border: #0081fb solid 5px;
   position: absolute;
@@ -803,16 +942,19 @@ section .grid .imgBox > img:hover{
   height: 10px;
   border-radius: 50%;
 }
-.activeProfile{
+
+.activeProfile {
   background-color: transparent;
   padding: 20px;
   padding-top: 0px;
   transition: all 500ms;
 }
-.activeProfile:hover{
+
+.activeProfile:hover {
   border-radius: 20px;
   background-color: #ececec;
 }
+
 .complaint-box {
   background-color: #f2f2f2;
   padding: 20px;
@@ -843,34 +985,38 @@ section .grid .imgBox > img:hover{
 .reportBtn:hover {
   background-color: #3e8e41;
 }
+
 .PublishForm {
   width: 500px;
   height: 200px;
   padding: 20px;
   position: relative;
 }
+
 .kamera-ikonu {
-display: none;
-height: 20px;
-width: 20px;
-background-image: url("kamera-ikonu.png");
-background-size: contain;
-background-repeat: no-repeat;
+  display: none;
+  height: 20px;
+  width: 20px;
+  background-image: url("kamera-ikonu.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
+
 .input-butonu {
-display: inline-block;
-background-color: #007bff;
-color: #fff;
-font-size: 1.2rem;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
-transition: all 0.3s ease;
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .input-butonu:hover {
-background-color: #0069d9;
+  background-color: #0069d9;
 }
+
 .uploadingPhoto {
   position: absolute;
   bottom: 20px;
@@ -883,4 +1029,51 @@ background-color: #0069d9;
   display: none;
   margin: auto;
   position: absolute;
+}
+
+.like-button .heart-icon {
+  height: 100px;
+  width: 100px;
+  background: url("./heart.png");
+  background-position: left;
+  cursor: pointer;
+  position: absolute;
+}
+
+.like-button .heart-icon.liked {
+  animation: like-anim 0.7s steps(28) forwards;
+}
+
+@keyframes like-anim {
+  to {
+    background-position: right;
+  }
+}
+
+.like-button .heart-bg {
+  background: rgba(255, 192, 200, 0);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 100ms ease;
+}
+
+.like-button .heart-bg:hover {
+  background: rgba(255, 192, 200, 0.7);
+}
+
+.like-button {
+  display: flex;
+  align-items: center;
+}
+
+.like-button .likes-amount {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #888;
+  font-weight: 900;
+  margin-left: 6px;
 }

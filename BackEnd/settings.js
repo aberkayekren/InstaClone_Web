@@ -16,7 +16,7 @@ function handleRadioButtons() {
   }
 }
 
-document.addEventListener("click", function(e) {
+document.addEventListener("click", function (e) {
   var radioButtons = document.getElementsByName("radioButton");
   var radioGroup = document.querySelector('input[name="radioButton"]:checked');
   if (radioGroup !== null && !radioGroup.contains(e.target)) {

@@ -3,8 +3,7 @@ document.getElementById('modeButton').addEventListener('click', () => {
   localStorage.setItem('mode', document.body.classList)
 })
 
-if (localStorage.getItem('mode') != ''){
+if (localStorage.getItem('mode') != '') {
   document.body.classList.add(localStorage.getItem('mode'));
   document.getElementById('modeButton').checked = true;
 }
-

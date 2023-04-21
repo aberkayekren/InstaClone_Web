@@ -34,16 +34,24 @@
   pointer-events: none;
 }
 
-.textarea-container textarea:focus + label,
-.textarea-container textarea:not(:placeholder-shown) + label {
+.textarea-container textarea:focus+label,
+.textarea-container textarea:not(:placeholder-shown)+label {
   transform: translateY(-2rem);
   font-size: 1.2rem;
   color: #666;
 }
-#saveCahange{
-  width: 100%; margin-top: 40px; padding: 20px; font-size: x-large; border-radius: 20px; background-color: #0081fb; color: white;
+
+#saveCahange {
+  width: 100%;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: x-large;
+  border-radius: 20px;
+  background-color: #0081fb;
+  color: white;
   transition: 500ms all;
 }
-#saveCahange:hover{
+
+#saveCahange:hover {
   background-color: #0070d8;
 }

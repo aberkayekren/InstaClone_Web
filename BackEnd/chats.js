@@ -1,18 +1,20 @@
 function scrollToBottom() {
   const container = document.getElementById('message-container');
-  container.lastElementChild.scrollIntoView({ behavior: 'smooth' });
+  container.lastElementChild.scrollIntoView({
+    behavior: 'smooth'
+  });
 }
 
-      const messageInput = document.getElementById('message-input');
+const messageInput = document.getElementById('message-input');
 const sendButton = document.getElementById('send-button');
 const chatLogs = document.querySelector('.chatlogs');
 
-sendButton.addEventListener('click', function() {
+sendButton.addEventListener('click', function () {
   const message = messageInput.value;
   if (message !== '') {
     addMessage('self', message);
     messageInput.value = '';
-    setTimeout(function() {
+    setTimeout(function () {
       addMessage('friend', 'Bir şeyler yazıyor...');
     }, 1000);
   }
