@@ -42,7 +42,7 @@
   position: relative;
   grid-area: 1/1;
   border-radius: 5px;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .slide-nav {

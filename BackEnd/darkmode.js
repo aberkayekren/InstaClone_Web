@@ -1,4 +1,5 @@
 document.getElementById('modeButton').addEventListener('click', () => {
+  alert("DarkMode düzgün çalışmıyor olabilir bilginize!");
   document.body.classList.toggle('dark');
   localStorage.setItem('mode', document.body.classList)
 })

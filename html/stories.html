@@ -36,37 +36,41 @@
             class="profile" alt=""> aberkayekren
         </div>
         <div class="storyControl">
-          <div class="play">
-            <div id="play">
-
-            </div>
-            <div id="pause">
-              <svg width="24" style="margin-right: 30px;" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M8 19C9.1 19 10 18.1 10 17V7C10 5.9 9.1 5 8 5C6.9 5 6 5.9 6 7V17C6 18.1 6.9 19 8 19ZM14 7V17C14 18.1 14.9 19 16 19C17.1 19 18 18.1 18 17V7C18 5.9 17.1 5 16 5C14.9 5 14 5.9 14 7Z"
-                  fill="white" />
-              </svg>
-            </div>
-          </div>
-          <div class="voice">
-            <div id="soundOn">
-              <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M4.7847 6.40342H2.21388C1.75933 6.40342 1.3234 6.59353 1.00198 6.93193C0.680569 7.27033 0.5 7.7293 0.5 8.20787V11.8168C0.5 12.2954 0.680569 12.7543 1.00198 13.0927C1.3234 13.4311 1.75933 13.6212 2.21388 13.6212H4.7847M4.7847 6.40342V13.6212M4.7847 6.40342L11.6402 1.3329C11.8885 1.15203 12.1778 1.04343 12.4787 1.01808C12.7797 0.992727 13.0817 1.05153 13.3541 1.18854C13.6208 1.35052 13.8411 1.58513 13.9919 1.86773C14.1427 2.15032 14.2184 2.47046 14.211 2.79451V17.2302C14.2039 17.5711 14.1051 17.9029 13.9261 18.1871C13.7471 18.4714 13.4953 18.6964 13.1999 18.8361C12.9274 18.9731 12.6254 19.0319 12.3245 19.0066C12.0235 18.9812 11.7343 18.8726 11.486 18.6918L4.7847 13.6212M17.6388 7.30565C18.2346 8.06404 18.5402 9.02923 18.4957 10.0123C18.5402 10.9954 18.2346 11.9606 17.6388 12.719"
-                  stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </div>
-            <div id="soundOf">
-
-            </div>
-          </div>
-          <div class="storyMore">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff">
-              <path d="M0 0h24v24H0V0z" fill="none" />
+          <div class="voice" id="voiceBtn" style="margin-right: 80px; cursor: pointer;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
+                d="M4.46154 6.39109H2.38462C2.01739 6.39109 1.66521 6.5812 1.40554 6.9196C1.14588 7.258 1 7.71697 1 8.19554V11.8045C1 12.283 1.14588 12.742 1.40554 13.0804C1.66521 13.4188 2.01739 13.6089 2.38462 13.6089H4.46154M4.46154 6.39109V13.6089M4.46154 6.39109L10 1.32057C10.2006 1.1397 10.4343 1.0311 10.6774 1.00575C10.9206 0.980398 11.1645 1.0392 11.3846 1.17621C11.6001 1.33819 11.778 1.5728 11.8999 1.8554C12.0217 2.13799 12.0828 2.45813 12.0769 2.78218V17.2178C12.0711 17.5588 11.9913 17.8906 11.8467 18.1748C11.7021 18.459 11.4987 18.6841 11.26 18.8238C11.0399 18.9608 10.7959 19.0196 10.5528 18.9943C10.3097 18.9689 10.076 18.8603 9.87538 18.6794L4.46154 13.6089M19 7.29332L14.8462 12.7067M14.8462 7.29332L19 12.7067"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="noneVoice" id="voiceModal"
+            style="background-color: rgba(0, 0, 0, 0.8); color: white; border-radius: 20px; width: max-content; padding: 10px; position: absolute; top: 65px; right: 400px; z-index: 1000; display: none;">
+            Bu Videonun Sesi Yok</div>
+          <script>
+            const voiceBtn = document.getElementById("voiceBtn");
+            const voiceModal = document.getElementById("voiceModal");
+
+            voiceBtn.onclick = function () {
+              voiceModal.style.display = "inline-block";
+              setTimeout(function () {
+                voiceModal.style.display = "none";
+              }, 3000);
+            }
+          </script>
+          <div class="storyMore">
+            <a href="" id="storyMore">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#fff">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path
+                  d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
               </svg>
+            </a>
+            <div class="contextMenu">
+              <ul>
+                <li style="color: red;">Bu Uygunsuz İçeriği Şikayet Et</li>
+                <a href=""><li>Bu Hesap</li></a>
+              </ul>
+            </div>
           </div>
         </div>
         <div data-slide="slide" class="slide">

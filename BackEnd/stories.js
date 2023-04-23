@@ -26,7 +26,7 @@ class SlideStories {
     if (this.active < this.items.length - 1) {
       this.activeSlide(this.active + 1);
     } else {
-      this.activeSlide(0);
+      window.location.href = "/html/loginPage.html";
     }
   }
 

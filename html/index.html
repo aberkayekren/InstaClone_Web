@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Insta Clone - Ana Sayfa</title>
   <link rel="stylesheet" href="/Stylesheets/main.css">
+  <link rel="stylesheet" href="/Stylesheets/likeButton.css">
   <link rel="shortcut icon" href="/Image/logo.png" type="image/x-icon">
 </head>
 
@@ -56,7 +57,7 @@
     </div>
   </div>
   <!--Side Navbar-->
-  <nav>
+  <nav id="navbar">
     <ul>
       <!--Logo-->
       <li>
@@ -147,7 +148,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <path d="M0 0h24v24H0V0z" fill="none" />
             <path
               d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-            </svg> Settings</a>
+          </svg> Settings</a>
         <div class="line"></div>
       </li>
       <!--Daha Fazla Context Menüsünü Açmak İçin-->
@@ -170,7 +171,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                   <path d="M0 0h24v24H0V0z" fill="none" />
                   <path
                     d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-                  </svg> Settings</a></li>
+                </svg> Settings</a></li>
             <!--Profil Yönlendirmesi-->
             <li><a href="/html/profile.html" style="padding-left: 10px;"><svg width="24" height="24" viewBox="0 0 15 18"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,21 +182,21 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <!--Tema Değiştirme Kısmı-->
             <li>
               <label class="modeControl">
-                <input type="checkbox" id="modeButton">
+                <input type="checkbox" id="modeButton" onclick="darkModes()">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
                     viewBox="0 0 24 24" width="24px">
                     <rect fill="none" height="24" width="50px" />
                     <path
                       d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" />
-                    </svg>
+                  </svg>
                 </span>
                 <span id="lightContent">
                   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79zM1 10.5h3v2H1zM11 .55h2V3.5h-2zm8.04 2.495l1.408 1.407-1.79 1.79-1.407-1.408zm-1.8 15.115l1.79 1.8 1.41-1.41-1.8-1.79zM20 10.5h3v2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm-1 4h2v2.95h-2zm-7.45-.96l1.41 1.41 1.79-1.8-1.41-1.41z" />
-                    </svg>
+                  </svg>
                 </span>
                 Görünümü Değiştir
               </label>
@@ -229,6 +230,17 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
           </svg> Sign Out</a>
       </li>
     </ul>
+    <button class="smallNavbarBtn" id="navbarBtn"
+      onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+      aria-label="Main Menu">
+      <svg width="24px" height="24px" viewBox="0 0 100 100">
+        <path class="line line1"
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3"
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
   </nav>
   <!--Header-->
   <div id="header">
@@ -242,7 +254,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <path d="M0 0h24v24H0V0z" fill="none" />
             <path
               d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-            </svg>
+          </svg>
           <input type="text" name="" id="" placeholder="Ara">
           <div class="searchHistory">
             <a href="/html/profileAiko.html">
@@ -285,7 +297,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z" />
-              </svg>
+            </svg>
           </a>
           <!--Bildirimler Context Menüsü-->
           <div class="notificationsPage"
@@ -314,7 +326,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-              </svg> Publish
+            </svg> <span id="publishText" style="color: white;">Publish</span>
           </a>
         </li>
       </ul>
@@ -323,7 +335,6 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
     <main id="main">
       <section>
         <!--Hikayeler Kısmı-->
-        <h6>Daha Fazla</h6>
         <div class="histories">
           <!--Profiller-->
           <a href="/html/stories.html">
@@ -365,12 +376,15 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <div class="gridContent">
               <img src="/Image/aiko.jpg" width="30px" height="30px" style="border-radius: 50%;" class="profile" alt="">
               Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button1">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">7</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -414,12 +428,15 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <div class="gridContent" style="position: relative; top: 250px;">
               <img src="/Image/muhammedsumbul.jpg" width="30px" height="30px" style="border-radius: 50%;"
                 class="profile" alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button2">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">5</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -452,12 +469,15 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <div class="gridContent">
               <img src="/Image/antoniomontana.jpg" width="30px" height="30px" style="border-radius: 50%;"
                 class="profile" alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button3">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">3</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -493,12 +513,15 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <div class="gridContent" style="position: relative; bottom: 340px;">
               <img src="/Image/doga.jpg" width="30px" height="30px" style="border-radius: 50%;" class="profile" alt="">
               Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button4">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">32</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -532,12 +555,15 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <div class="gridContent" style="position: relative; right: 0px; bottom: -55px;">
               <img src="/Image/andacinkarisi.jpg" width="30px" height="30px" style="border-radius: 50%;" class="profile"
                 alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button5">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">31</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -571,12 +597,15 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <div class="gridContent" style="position: relative; bottom: 40px;">
               <img src="/Image/omerfaruk.jpg" width="30px" height="30px" style="border-radius: 50%;" class="profile"
                 alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button6">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">30</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -612,12 +641,15 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <div class="gridContent" style="position: relative; bottom: 350px;">
               <img src="/Image/ismailahmadkanabawi.jpg" width="30px" height="30px" style="border-radius: 50%;"
                 class="profile" alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button7">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">29</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -650,12 +682,15 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <div class="gridContent">
               <img src="/Image/ivanrakitic.jpeg" width="30px" height="30px" style="border-radius: 50%;" class="profile"
                 alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button8">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">28</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -697,12 +732,15 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
             <div class="gridContent" style="position: relative;  bottom: 80px;">
               <img src="/Image/joker.jpg" width="30px" height="30px" style="border-radius: 50%;" class="profile" alt="">
               Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button9">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">27</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -759,7 +797,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <!--İkinci Postun Daha Fazla Contexti-->
           <div class="contextMenu">
@@ -849,7 +887,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -878,7 +916,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -907,7 +945,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -936,7 +974,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1025,12 +1063,12 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20">
                   <path
                     d="M796 935 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l264 262-44 44ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667ZM275 500v-60h201v60H275Z" />
-                  </svg>
+                </svg>
                 <input type="range" min="0" max="100" value="0" id="zoomRange">
                 <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20">
                   <path
                     d="M796 935 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l264 262-44 44ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667Zm-31-85v-82h-82v-60h82v-81h60v81h81v60h-81v82h-60Z" />
-                  </svg>
+                </svg>
                 <button style="padding: 10px; cursor: pointer; border-radius: 50%; margin-left: 5%;"><svg
                     aria-label="Medya galerisini aç" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="12"
                     role="img" viewBox="0 0 24 24" width="12">
@@ -1116,7 +1154,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -1202,7 +1240,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1231,7 +1269,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1260,7 +1298,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1289,7 +1327,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1312,7 +1350,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -1398,7 +1436,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1427,7 +1465,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1456,7 +1494,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1485,7 +1523,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1508,7 +1546,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -1591,7 +1629,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1620,7 +1658,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1649,7 +1687,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1678,7 +1716,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1700,7 +1738,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -1786,7 +1824,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1815,7 +1853,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1844,7 +1882,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1873,7 +1911,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1895,7 +1933,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -1981,7 +2019,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2010,7 +2048,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2039,7 +2077,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2068,7 +2106,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2089,7 +2127,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -2175,7 +2213,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2204,7 +2242,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2233,7 +2271,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2262,7 +2300,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2283,7 +2321,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -2369,7 +2407,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2398,7 +2436,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2427,7 +2465,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2456,7 +2494,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2477,7 +2515,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -2573,7 +2611,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2602,7 +2640,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2631,7 +2669,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2660,7 +2698,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2679,13 +2717,14 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
         <div id="content1" class="reels">
           <video class="reelsVideo" width="320px" src="/Video/pexels-kevin-malik-9035713-2160x3840-24fps.mp4"></video>
           <div class="activityColoumn" style="position: relative; left: 400px; bottom: 370px;">
-            <div class="like" style="color: white;"><svg aria-label="Bildirimler" class="_ab6-"
-                color="rgb(245, 245, 245)" fill="rgb(255, 255, 255)" height="24" role="img" viewBox="0 0 24 24"
-                width="24">
-                <path
-                  d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                </path>
-              </svg> 218</div>
+            <div class="like" style="color: white;">
+              <div class="like-button" id="like-button10">
+                <div class="heart-bg">
+                  <div class="heart-icon"></div>
+                </div>
+                <div class="likes-amount">26</div>
+              </div>
+            </div>
           </div>
           <div class="comment" style="position: relative; fill: white; left: 400px; bottom: 340px; color: white;"><svg
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
@@ -2706,7 +2745,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2735,13 +2774,14 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
         <div id="content2" class="reels">
           <video class="reelsVideo" width="320px" src="/Video/pexels-jill-burrow-7681587-2160x4096-24fps.mp4"></video>
           <div class="activityColoumn" style="position: relative; left: 400px; bottom: 370px;">
-            <div class="like" style="color: white;"><svg aria-label="Bildirimler" class="_ab6-"
-                color="rgb(245, 245, 245)" fill="rgb(255, 255, 255)" height="24" role="img" viewBox="0 0 24 24"
-                width="24">
-                <path
-                  d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                </path>
-              </svg> 218</div>
+            <div class="like" style="color: white;">
+              <div class="like-button" id="like-button11">
+                <div class="heart-bg">
+                  <div class="heart-icon"></div>
+                </div>
+                <div class="likes-amount">25</div>
+              </div>
+            </div>
           </div>
           <div class="comment" style="position: relative; fill: white; left: 400px; bottom: 340px; color: white;"><svg
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
@@ -2762,7 +2802,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2792,13 +2832,14 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
           <video class="reelsVideo" width="320px"
             src="/Video/pexels-eugenia-remark-15764815-1080x1920-60fps.mp4"></video>
           <div class="activityColoumn" style="position: relative; left: 400px; bottom: 370px;">
-            <div class="like" style="color: white;"><svg aria-label="Bildirimler" class="_ab6-"
-                color="rgb(245, 245, 245)" fill="rgb(255, 255, 255)" height="24" role="img" viewBox="0 0 24 24"
-                width="24">
-                <path
-                  d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                </path>
-              </svg> 218</div>
+            <div class="like" style="color: white;">
+              <div class="like-button" id="like-button12">
+                <div class="heart-bg">
+                  <div class="heart-icon"></div>
+                </div>
+                <div class="likes-amount">32</div>
+              </div>
+            </div>
           </div>
           <div class="comment" style="position: relative; fill: white; left: 400px; bottom: 340px; color: white;"><svg
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
@@ -2819,7 +2860,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2848,13 +2889,14 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
         <div id="content4" class="reels">
           <video class="reelsVideo" width="320px" src="/Video/pexels-gül-işık-8928916-1080x1920-60fps.mp4"></video>
           <div class="activityColoumn" style="position: relative; left: 400px; bottom: 370px;">
-            <div class="like" style="color: white;"><svg aria-label="Bildirimler" class="_ab6-"
-                color="rgb(245, 245, 245)" fill="rgb(255, 255, 255)" height="24" role="img" viewBox="0 0 24 24"
-                width="24">
-                <path
-                  d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                </path>
-              </svg> 218</div>
+            <div class="like" style="color: white;">
+              <div class="like-button" id="like-button13">
+                <div class="heart-bg">
+                  <div class="heart-icon"></div>
+                </div>
+                <div class="likes-amount">321</div>
+              </div>
+            </div>
           </div>
           <div class="comment" style="position: relative; fill: white; left: 400px; bottom: 340px; color: white;"><svg
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
@@ -2875,7 +2917,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2952,7 +2994,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3008,7 +3050,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3065,7 +3107,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3121,7 +3163,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3199,7 +3241,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3255,7 +3297,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3311,7 +3353,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3367,7 +3409,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3444,7 +3486,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3500,7 +3542,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3556,7 +3598,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3613,7 +3655,7 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3679,9 +3721,11 @@ border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
       photoControl.style.opacity = "0";
       photoDel.style.visibility = "hidden";
       photoDel.style.opacity = "0";
-    })
+    });
   </script>
+  <script src="/BackEnd/navbar.js"></script>
   <script src="/BackEnd/darkmode.js"></script>
+  <script src="/BackEnd/likeButton.js"></script>
   <script src="/BackEnd/main.js"></script>
   <script src="/BackEnd/reels.js"></script>
   <script src="/BackEnd/modal.js"></script>

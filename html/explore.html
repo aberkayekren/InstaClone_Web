@@ -7,13 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Insta Clone - Ana Sayfa</title>
   <link rel="stylesheet" href="/Stylesheets/main.css">
+  <link rel="stylesheet" href="/Stylesheets/likeButton.css">
   <link rel="shortcut icon" href="/Image/logo.png" type="image/x-icon">
 </head>
 
 <body class="">
+  <!--Loading Page-->
   <div id="preloader">
+    <!--Ortalamak İçin-->
     <div id="center">
+      <!--Circle-->
       <div class="loader"></div>
+      <!--Meta İcon-->
       <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1567 1041" width="30" height="30"
         style="position: absolute; top: 10px; left:10px;">
         <title>Meta_Platforms_Inc</title>
@@ -51,15 +56,20 @@
       </svg>
     </div>
   </div>
-  <nav>
+  <!--Side Navbar-->
+  <nav id="navbar">
     <ul>
+      <!--Logo-->
       <li>
         <a href="/html/index.html">
           <img width="200px" id="navbarLogo" src="/Image/navbarLogo.png" alt="">
         </a>
       </li>
+      <!--Profil Kısmı-->
       <li>
-        <img width="120px" id="profileImage" src="/Image/ornekResim.png" alt="">
+        <img width="120px" id="profileImage" style="
+border-radius: 50em;
+border: 2px solid transparent;" src="/Image/ornekResim.png" alt="">
         <a href="/html/profile.html">
           <h4 style="margin-top: 10px;">Andaç Berkay Ekren</h4>
           <h6>@aberkayekren</h6>
@@ -79,22 +89,27 @@
           </div>
         </a>
       </li>
+      <!--Ana Sayfa Yönlendirmesi-->
       <li>
-        <a href="/html/index.html"><svg aria-label="Ana Sayfa" class="_ab6-" color="rgb(245, 245, 245)"
-            fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24">
+        <a href="/html/index.html"><svg aria-label="Ana Sayfa" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)"
+            height="24" role="img" viewBox="0 0 24 24" width="24">
             <path
-              d="M9.005 16.545a2.997 2.997 0 0 1 2.997-2.997A2.997 2.997 0 0 1 15 16.545V22h7V11.543L12 2 2 11.543V22h7.005Z"
-              fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path>
+              d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.724l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.724V22a1 1 0 0 1-1 1Z">
+            </path>
           </svg> Home</a>
       </li>
+      <!--Keşfet Yönlendirmesi-->
       <li>
         <a href="/html/explore.html"><svg aria-label="Keşfet" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)"
             height="24" role="img" viewBox="0 0 24 24" width="24">
-            <path
-              d="m13.173 13.164 1.491-3.829-3.83 1.49ZM12.001.5a11.5 11.5 0 1 0 11.5 11.5A11.513 11.513 0 0 0 12.001.5Zm5.35 7.443-2.478 6.369a1 1 0 0 1-.57.569l-6.36 2.47a1 1 0 0 1-1.294-1.294l2.48-6.369a1 1 0 0 1 .57-.569l6.359-2.47a1 1 0 0 1 1.294 1.294Z">
-            </path>
+            <polygon fill="none" points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
+              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon>
+            <polygon fill-rule="evenodd" points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon>
+            <circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round"
+              stroke-linejoin="round" stroke-width="2"></circle>
           </svg> Keşfet</a>
       </li>
+      <!--Reels Yönlendirmesi-->
       <li>
         <a href="/html/reels.html"><svg aria-label="Reels" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)"
             height="24" role="img" viewBox="0 0 24 24" width="24">
@@ -112,6 +127,7 @@
               fill-rule="evenodd"></path>
           </svg> Reels</a>
       </li>
+      <!--Mesajlar Yönlendirmesi-->
       <li>
         <a href="/html/directions.html"><svg aria-label="Messenger" class="x1lliihq x1n2onr6" color="rgb(0, 0, 0)"
             fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
@@ -125,15 +141,17 @@
           </svg> Directions <sup
             style="position: relative; right: 108px; bottom: 5px; background-color: rgb(255, 47, 47); padding: 5px; border-radius: 40px; font-size: 10px; color: white;">1</sup></a>
       </li>
+      <!--Ayarlar Yönlendirmesi-->
       <li>
         <a href="/html/settings.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24"
             width="24px" fill="#000000">
             <path d="M0 0h24v24H0V0z" fill="none" />
             <path
               d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-            </svg> Settings</a>
+          </svg> Settings</a>
         <div class="line"></div>
       </li>
+      <!--Daha Fazla Context Menüsünü Açmak İçin-->
       <li>
         <a class="openMoreModal"><svg aria-label="Ayarlar" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)"
             height="24" role="img" viewBox="0 0 24 24" width="24">
@@ -144,20 +162,24 @@
             <line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               x1="3" x2="21" y1="20" y2="20"></line>
           </svg> More</a>
+        <!--Daha Fazla Context Menüsü-->
         <div class="more" id="moreModal">
           <ul>
+            <!--Ayarlar Yönlendirmesi-->
             <li><a href="/html/settings.html" style="padding-left: 10px;"><svg xmlns="http://www.w3.org/2000/svg"
                   height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
                   <path d="M0 0h24v24H0V0z" fill="none" />
                   <path
                     d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.09-.16-.26-.25-.44-.25-.06 0-.12.01-.17.03l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.06-.02-.12-.03-.18-.03-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.09.16.26.25.44.25.06 0 .12-.01.17-.03l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z" />
-                  </svg> Settings</a></li>
+                </svg> Settings</a></li>
+            <!--Profil Yönlendirmesi-->
             <li><a href="/html/profile.html" style="padding-left: 10px;"><svg width="24" height="24" viewBox="0 0 15 18"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M7.29073 1C1.9122 1 1.00357 1.78484 1.00357 8.09811C1.00357 15.1659 0.871363 17 2.21536 17C3.55852 17 5.7522 13.8977 7.29073 13.8977C8.82926 13.8977 11.0229 17 12.3661 17C13.7101 17 13.5779 15.1659 13.5779 8.09811C13.5779 1.78484 12.6693 1 7.29073 1Z"
                     stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg> Saves</a></li>
+            <!--Tema Değiştirme Kısmı-->
             <li>
               <label class="modeControl">
                 <input type="checkbox" id="modeButton">
@@ -167,18 +189,19 @@
                     <rect fill="none" height="24" width="50px" />
                     <path
                       d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" />
-                    </svg>
+                  </svg>
                 </span>
                 <span id="lightContent">
                   <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px">
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79zM1 10.5h3v2H1zM11 .55h2V3.5h-2zm8.04 2.495l1.408 1.407-1.79 1.79-1.407-1.408zm-1.8 15.115l1.79 1.8 1.41-1.41-1.8-1.79zM20 10.5h3v2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm-1 4h2v2.95h-2zm-7.45-.96l1.41 1.41 1.79-1.8-1.41-1.41z" />
-                    </svg>
+                  </svg>
                 </span>
                 Görünümü Değiştir
               </label>
             </li>
+            <!--Şikayet Modalına Yönlendirmek İçin-->
             <li><a id="openReportModal">
                 <svg aria-label="Bir sorun bildir" class="x1lliihq x1n2onr6" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)"
                   height="18" role="img" viewBox="0 0 24 24" width="18">
@@ -189,13 +212,15 @@
                 </svg> Bir Sorun bildir
               </a></li>
             <div class="line"></div>
+            <!--Hesaplar Modalına Yönlendirmek İçin-->
             <li style="margin-top: 50px;"><a id="openAccountModal">Hesap Değiştir</a></li>
           </ul>
         </div>
       </li>
+      <!--Hesaptan Çıkmak İçin-->
       <li>
-        <a onclick="confirmRedirect()"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+        <a style="cursor: pointer;" onclick="confirmRedirect()"><svg width="24" height="24" viewBox="0 0 24 24"
+            fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M9 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H9"
               stroke="#5A5A5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -205,11 +230,23 @@
           </svg> Sign Out</a>
       </li>
     </ul>
+    <button class="smallNavbarBtn" id="navbarBtn"
+      onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+      aria-label="Main Menu">
+      <svg width="24px" height="24px" viewBox="0 0 100 100">
+        <path class="line line1"
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3"
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </button>
   </nav>
+  <!--Header-->
   <div id="header">
     <header>
       <ul>
-        <!--<li>DarkMode</li>-->
+        <!--Arama Kısmı-->
         <li>
 
           <svg id="searchIcon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
@@ -217,7 +254,7 @@
             <path d="M0 0h24v24H0V0z" fill="none" />
             <path
               d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-            </svg>
+          </svg>
           <input type="text" name="" id="" placeholder="Ara">
           <div class="searchHistory">
             <a href="/html/profileAiko.html">
@@ -253,20 +290,23 @@
           </div>
           <button id="searchAreaClear">X</button>
         </li>
+        <!--Bildirimler Context Menüsünün Açılması İçin-->
         <li>
           <a class="notificationsOpen">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z" />
-              </svg>
+            </svg>
           </a>
+          <!--Bildirimler Context Menüsü-->
           <div class="notificationsPage"
             style="position: absolute; top: 20px; background-color: white; text-align: center; width: 200px; border-radius: 20px; box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px; padding: 10px; right: 20px;">
             <h4>Bildirimler</h4>
             <p style="margin-top: 10px;">Henüz Bir Bildirimin Yok</p>
           </div>
         </li>
+        <!--Mesajlar Sayfasına Yönlendirmek İçin-->
         <li>
           <a href="/html/directions.html"><svg aria-label="Messenger" class="x1lliihq x1n2onr6" color="rgb(0, 0, 0)"
               fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
@@ -279,18 +319,20 @@
                 fill-rule="evenodd"></path>
             </svg></a>
         </li>
+        <!--Gönderi Modalını Açmak İçin-->
         <li>
           <a id="openPublishModal">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-              </svg> Publish
+            </svg> Publish
           </a>
         </li>
       </ul>
     </header>
-    <main>
+    <!--Main-->
+    <main id="main">
       <section>
         <div class="grid">
           <!--Postun Küçük Görünümü-->
@@ -301,12 +343,15 @@
             <div class="gridContent">
               <img src="/Image/aiko.jpg" width="30px" height="30px" style="border-radius: 50%;" class="profile" alt="">
               Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button1">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">7</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -338,8 +383,8 @@
           </div>
           <div>
             <video class="openReels" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"
-              style="object-fit: fill; cursor: pointer; border-radius: 10px; position: absolute; left: 500px; top: 20px;"
-              id="openReelsModal2" width="120px" src="/Video/pexels-jill-burrow-7681587-2160x4096-24fps.mp4"></video>
+              style="cursor: pointer; border-radius: 10px; position: absolute; left: 500px; top: 20px;"
+              id="openReelsModal2" width="110px" src="/Video/pexels-jill-burrow-7681587-2160x4096-24fps.mp4"></video>
           </div>
           <!--Postun Küçük Görünümü-->
           <div class="imgBox">
@@ -350,12 +395,15 @@
             <div class="gridContent" style="position: relative; top: 250px;">
               <img src="/Image/muhammedsumbul.jpg" width="30px" height="30px" style="border-radius: 50%;"
                 class="profile" alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button2">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">5</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -388,12 +436,15 @@
             <div class="gridContent">
               <img src="/Image/antoniomontana.jpg" width="30px" height="30px" style="border-radius: 50%;"
                 class="profile" alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button3">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">3</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -429,12 +480,15 @@
             <div class="gridContent" style="position: relative; bottom: 340px;">
               <img src="/Image/doga.jpg" width="30px" height="30px" style="border-radius: 50%;" class="profile" alt="">
               Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button4">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">32</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -468,12 +522,15 @@
             <div class="gridContent" style="position: relative; right: 0px; bottom: -55px;">
               <img src="/Image/andacinkarisi.jpg" width="30px" height="30px" style="border-radius: 50%;" class="profile"
                 alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button5">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">31</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -507,12 +564,15 @@
             <div class="gridContent" style="position: relative; bottom: 40px;">
               <img src="/Image/omerfaruk.jpg" width="30px" height="30px" style="border-radius: 50%;" class="profile"
                 alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button6">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">30</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -548,12 +608,15 @@
             <div class="gridContent" style="position: relative; bottom: 350px;">
               <img src="/Image/ismailahmadkanabawi.jpg" width="30px" height="30px" style="border-radius: 50%;"
                 class="profile" alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button7">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">29</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -586,12 +649,15 @@
             <div class="gridContent">
               <img src="/Image/ivanrakitic.jpeg" width="30px" height="30px" style="border-radius: 50%;" class="profile"
                 alt=""> Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button8">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">28</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -626,19 +692,22 @@
               viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.6 16.06C9.24 16.34 8.73 16.34 8.37 16.06L2.22 11.28C2.04578 11.1439 1.83107 11.07 1.61 11.07C1.38894 11.07 1.17422 11.1439 1 11.28C0.880891 11.3733 0.784563 11.4924 0.718318 11.6284C0.652072 11.7644 0.617645 11.9137 0.617645 12.065C0.617645 12.2163 0.652072 12.3656 0.718318 12.5016C0.784563 12.6376 0.880891 12.7568 1 12.85L7.76 18.11C8.48 18.67 9.49 18.67 10.22 18.11L16.98 12.85C17.49 12.45 17.49 11.68 16.98 11.28L16.97 11.27C16.7958 11.1339 16.5811 11.06 16.36 11.06C16.1389 11.06 15.9242 11.1339 15.75 11.27L9.6 16.06ZM10.23 13.04L16.99 7.78002C17.5 7.38002 17.5 6.60002 16.99 6.20002L10.23 0.94002C9.51 0.38002 8.5 0.38002 7.77 0.94002L1.01 6.21002C0.500004 6.61002 0.500004 7.39002 1.01 7.79002L7.77 13.05C8.49 13.61 9.51 13.61 10.23 13.04Z"
-                fill="whitesmoke" />
+                fill="black" />
             </svg>
 
             <!--Postun Küçük Hali-->
             <div class="gridContent" style="position: relative;  bottom: 80px;">
               <img src="/Image/joker.jpg" width="30px" height="30px" style="border-radius: 50%;" class="profile" alt="">
               Natasha
-              <div class="like"><svg aria-label="Bildirimler" class="_ab6-" color="rgb(245, 245, 245)"
-                  fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
-                  <path
-                    d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                  </path>
-                </svg> 218</div>
+              <div class="like" style="  top: 27px;
+  right: 25px !important;">
+                <div class="like-button" id="like-button9">
+                  <div class="heart-bg">
+                    <div class="heart-icon"></div>
+                  </div>
+                  <div class="likes-amount">27</div>
+                </div>
+              </div>
               <div class="comment"><svg aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(168, 168, 168)"
                   fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24">
                   <title>Yorum Yap</title>
@@ -695,7 +764,7 @@
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <!--İkinci Postun Daha Fazla Contexti-->
           <div class="contextMenu">
@@ -785,7 +854,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -814,7 +883,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -843,7 +912,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -872,7 +941,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -926,10 +995,12 @@
       <!--Gönderi Modalını Kpatmak İçin-->
       <span class="modalKapat" id="publishModalKapat">X</span>
       <!--Gönderi Modalınının İçeriği-->
-      <div class="modalContent" style="height: max-content; width: max-content; top: 2%; padding: 20px;">
+      <div class="modalContent" style="height: max-content; width: max-content; top: 9.5%; padding: 20px;">
+        <span id="photoDel"
+          style="transition: all 500ms; cursor: pointer; visibility: hidden; opacity: 0; position: absolute; z-index: 1000; background-color: red; padding: 10px; border-radius: 20px; color: white; top: 10px; right: 20px;">X</span>
         <h2 style="text-align: center; margin-bottom: 10px;">Yeni Gönderi Oluştur</h2>
         <div class="upload" style="text-align: center; align-items: center;">
-          <svg style="margin-top: 120px;" aria-label="Görsel veya video gibi medya içeriklerini temsil eden simge"
+          <svg style="margin-top: 150px;" aria-label="Görsel veya video gibi medya içeriklerini temsil eden simge"
             class="x1lliihq x1n2onr6" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="77" role="img"
             viewBox="0 0 97.6 77.3" width="96">
             <title>Görsel veya video gibi medya içeriklerini temsil eden simge</title>
@@ -951,11 +1022,89 @@
                 Yüklenecek Fotoğrafı Seçin
               </label>
               <input type="file" id="dosya" name="dosya" style="opacity: 0;">
-              <img class="uploadingPhoto" id="yuklenen-fotograf" alt="Yüklenen Fotoğraf">
+              <img src="" class="uploadingPhoto" id="yuklenen-fotograf" alt="Yüklenen Fotoğraf"
+                style="margin-bottom: 10px;">
+              <div class="modalContentSettings" id="modalPhotoSettings"
+                style="transition: all 500ms; visibility: hidden; opacity: 0; z-index: 1000; position: absolute; width: 100%; bottom: -10px; left: 0; background-color: transparent;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20">
+                  <path
+                    d="M796 935 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l264 262-44 44ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667ZM275 500v-60h201v60H275Z" />
+                </svg>
+                <input type="range" min="0" max="100" value="0" id="zoomRange">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20">
+                  <path
+                    d="M796 935 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l264 262-44 44ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667Zm-31-85v-82h-82v-60h82v-81h60v81h81v60h-81v82h-60Z" />
+                </svg>
+                <button style="padding: 10px; cursor: pointer; border-radius: 50%; margin-left: 5%;"><svg
+                    aria-label="Medya galerisini aç" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="12"
+                    role="img" viewBox="0 0 24 24" width="12">
+                    <path
+                      d="M19 15V5a4.004 4.004 0 0 0-4-4H5a4.004 4.004 0 0 0-4 4v10a4.004 4.004 0 0 0 4 4h10a4.004 4.004 0 0 0 4-4ZM3 15V5a2.002 2.002 0 0 1 2-2h10a2.002 2.002 0 0 1 2 2v10a2.002 2.002 0 0 1-2 2H5a2.002 2.002 0 0 1-2-2Zm18.862-8.773A.501.501 0 0 0 21 6.57v8.431a6 6 0 0 1-6 6H6.58a.504.504 0 0 0-.35.863A3.944 3.944 0 0 0 9 23h6a8 8 0 0 0 8-8V9a3.95 3.95 0 0 0-1.138-2.773Z"
+                      fill-rule="evenodd"></path>
+                  </svg></button>
+              </div>
             </form>
           </div>
         </div>
       </div>
+      <style>
+        input[type=range] {
+          -webkit-appearance: none;
+          /* Krom, Safari, Edge */
+          -moz-appearance: none;
+          /* Firefox */
+          appearance: none;
+          width: 70%;
+          height: 8px;
+          background-color: #ffb700;
+          border-radius: 4px;
+          position: relative;
+          bottom: 5px;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          /* Krom, Safari, Edge */
+          appearance: none;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background-color: #ffb700;
+          cursor: pointer;
+        }
+
+        input[type=range]::-moz-range-thumb {
+          -moz-appearance: none;
+          /* Firefox */
+          appearance: none;
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background-color: #ffb700;
+          cursor: pointer;
+        }
+
+        input[type=range]::-ms-thumb {
+          appearance: none;
+          /* Edge */
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          background-color: #ffb700;
+          cursor: pointer;
+        }
+      </style>
+      <script>
+        const zoomRange = document.getElementById('zoomRange');
+        zoomRange.addEventListener('input', handleZoom);
+
+        function handleZoom() {
+          const zoomLevel = zoomRange.value;
+          const image = document.getElementById('yuklenen-fotograf');
+          image.style.transform = `scale(${1 + (zoomLevel / 100)})`;
+        }
+      </script>
     </div>
   </div>
 
@@ -972,7 +1121,7 @@
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -1058,7 +1207,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1087,7 +1236,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1116,7 +1265,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1145,7 +1294,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1168,7 +1317,7 @@
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -1254,7 +1403,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1283,7 +1432,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1312,7 +1461,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1341,7 +1490,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1364,7 +1513,7 @@
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -1447,7 +1596,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1476,7 +1625,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1505,7 +1654,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1534,7 +1683,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1556,7 +1705,7 @@
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -1642,7 +1791,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1671,7 +1820,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1700,7 +1849,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1729,7 +1878,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1751,7 +1900,7 @@
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -1837,7 +1986,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1866,7 +2015,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1895,7 +2044,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1924,7 +2073,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -1945,7 +2094,7 @@
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -2031,7 +2180,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2060,7 +2209,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2089,7 +2238,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2118,7 +2267,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2139,7 +2288,7 @@
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -2225,7 +2374,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2254,7 +2403,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2283,7 +2432,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2312,7 +2461,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2333,7 +2482,7 @@
               <path d="M0 0h24v24H0V0z" fill="none" />
               <path
                 d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-              </svg>
+            </svg>
           </a>
           <div class="contextMenu">
             <ul>
@@ -2429,7 +2578,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2458,7 +2607,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2487,7 +2636,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2516,7 +2665,7 @@
                     <path d="M0 0h24v24H0V0z" fill="none" />
                     <path
                       d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                    </svg>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -2535,19 +2684,20 @@
         <div id="content1" class="reels">
           <video class="reelsVideo" width="320px" src="/Video/pexels-kevin-malik-9035713-2160x3840-24fps.mp4"></video>
           <div class="activityColoumn" style="position: relative; left: 400px; bottom: 370px;">
-            <div class="like" style="color: white;"><svg aria-label="Bildirimler" class="_ab6-"
-                color="rgb(245, 245, 245)" fill="rgb(255, 255, 255)" height="24" role="img" viewBox="0 0 24 24"
-                width="24">
-                <path
-                  d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                </path>
-              </svg> 218</div>
+            <div class="like" style="color: white;">
+              <div class="like-button" id="like-button10">
+                <div class="heart-bg">
+                  <div class="heart-icon"></div>
+                </div>
+                <div class="likes-amount">26</div>
+              </div>
+            </div>
           </div>
           <div class="comment" style="position: relative; fill: white; left: 400px; bottom: 340px; color: white;"><svg
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -2562,7 +2712,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2591,19 +2741,20 @@
         <div id="content2" class="reels">
           <video class="reelsVideo" width="320px" src="/Video/pexels-jill-burrow-7681587-2160x4096-24fps.mp4"></video>
           <div class="activityColoumn" style="position: relative; left: 400px; bottom: 370px;">
-            <div class="like" style="color: white;"><svg aria-label="Bildirimler" class="_ab6-"
-                color="rgb(245, 245, 245)" fill="rgb(255, 255, 255)" height="24" role="img" viewBox="0 0 24 24"
-                width="24">
-                <path
-                  d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                </path>
-              </svg> 218</div>
+            <div class="like" style="color: white;">
+              <div class="like-button" id="like-button11">
+                <div class="heart-bg">
+                  <div class="heart-icon"></div>
+                </div>
+                <div class="likes-amount">25</div>
+              </div>
+            </div>
           </div>
           <div class="comment" style="position: relative; fill: white; left: 400px; bottom: 340px; color: white;"><svg
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -2618,7 +2769,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2648,19 +2799,20 @@
           <video class="reelsVideo" width="320px"
             src="/Video/pexels-eugenia-remark-15764815-1080x1920-60fps.mp4"></video>
           <div class="activityColoumn" style="position: relative; left: 400px; bottom: 370px;">
-            <div class="like" style="color: white;"><svg aria-label="Bildirimler" class="_ab6-"
-                color="rgb(245, 245, 245)" fill="rgb(255, 255, 255)" height="24" role="img" viewBox="0 0 24 24"
-                width="24">
-                <path
-                  d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                </path>
-              </svg> 218</div>
+            <div class="like" style="color: white;">
+              <div class="like-button" id="like-button12">
+                <div class="heart-bg">
+                  <div class="heart-icon"></div>
+                </div>
+                <div class="likes-amount">32</div>
+              </div>
+            </div>
           </div>
           <div class="comment" style="position: relative; fill: white; left: 400px; bottom: 340px; color: white;"><svg
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -2675,7 +2827,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2704,19 +2856,20 @@
         <div id="content4" class="reels">
           <video class="reelsVideo" width="320px" src="/Video/pexels-gül-işık-8928916-1080x1920-60fps.mp4"></video>
           <div class="activityColoumn" style="position: relative; left: 400px; bottom: 370px;">
-            <div class="like" style="color: white;"><svg aria-label="Bildirimler" class="_ab6-"
-                color="rgb(245, 245, 245)" fill="rgb(255, 255, 255)" height="24" role="img" viewBox="0 0 24 24"
-                width="24">
-                <path
-                  d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z">
-                </path>
-              </svg> 218</div>
+            <div class="like" style="color: white;">
+              <div class="like-button" id="like-button13">
+                <div class="heart-bg">
+                  <div class="heart-icon"></div>
+                </div>
+                <div class="likes-amount">321</div>
+              </div>
+            </div>
           </div>
           <div class="comment" style="position: relative; fill: white; left: 400px; bottom: 340px; color: white;"><svg
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -2731,7 +2884,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2793,7 +2946,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -2808,7 +2961,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2849,7 +3002,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -2864,7 +3017,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2906,7 +3059,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -2921,7 +3074,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -2962,7 +3115,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -2977,7 +3130,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3040,7 +3193,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -3055,7 +3208,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3096,7 +3249,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -3111,7 +3264,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3152,7 +3305,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -3167,7 +3320,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3208,7 +3361,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -3223,7 +3376,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3285,7 +3438,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -3300,7 +3453,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3341,7 +3494,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -3356,7 +3509,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3397,7 +3550,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -3412,7 +3565,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3454,7 +3607,7 @@
               aria-label="Yorum Yap" class="x1lliihq x1n2onr6" color="rgb(255, 255, 255)" fill="rgb(255, 255, 255)"
               height="24" role="img" viewBox="0 0 24 24" width="24">
               <title>Yorum Yap</title>
-              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor"
+              <path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="white"
                 stroke-linejoin="round" stroke-width="2"></path>
             </svg> 53</div>
           <div class="save" style="position: relative; bottom: 320px; right: 150px;">
@@ -3469,7 +3622,7 @@
                 <path d="M0 0h24v24H0V0z" fill="none" />
                 <path
                   d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
-                </svg>
+              </svg>
             </a>
           </div>
 
@@ -3511,7 +3664,35 @@
     </div>
   </div>
 
+  <script>
+    const dosyaInput = document.getElementById('dosya');
+    const yuklenenFotograf = document.getElementById('yuklenen-fotograf');
+    const photoControl = document.getElementById('modalPhotoSettings');
+    const photoDel = document.getElementById('photoDel');
+
+    dosyaInput.addEventListener('change', () => {
+      const dosya = dosyaInput.files[0];
+      yuklenenFotograf.style.display = "block";
+      if (dosya) {
+        yuklenenFotograf.src = URL.createObjectURL(dosya);
+        photoControl.style.visibility = "visible";
+        photoControl.style.opacity = "1";
+        photoDel.style.visibility = "visible";
+        photoDel.style.opacity = "1";
+      }
+    });
+    photoDel.addEventListener('click', () => {
+      yuklenenFotograf.style.display = "none";
+      yuklenenFotograf.src = null;
+      photoControl.style.visibility = "hidden";
+      photoControl.style.opacity = "0";
+      photoDel.style.visibility = "hidden";
+      photoDel.style.opacity = "0";
+    });
+  </script>
+  <script src="/BackEnd/navbar.js"></script>
   <script src="/BackEnd/darkmode.js"></script>
+  <script src="/BackEnd/likeButton.js"></script>
   <script src="/BackEnd/main.js"></script>
   <script src="/BackEnd/reels.js"></script>
   <script src="/BackEnd/modal.js"></script>
