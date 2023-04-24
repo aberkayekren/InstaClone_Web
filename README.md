@@ -2,6 +2,8 @@
 
 Bu proje, Instagram'ın web uygulamasının bir klonudur. Firebase fotoğraflar için fazladan yer kaplamamak için kullanılmıştır. Kullanıcı arayüzü için HTML-CSS-JS kullanılmıştır ve yönlendirme işlemleri için JS kullanılmıştır.
 
+[Projeye Göz Atmak için Tıklayın](https://andacberkayekren.com/html/loginPage.html)
+
 ## Kurulum
 
 1. Bu projeyi klonlayın veya indirin.
